@@ -1,0 +1,23 @@
+﻿@model Library.Models.Book
+<h2>Add new book</h2>
+
+<form method="post">
+    <label>Name</label>
+    <input type="text" name="name" /><br />
+
+    <label>Author</label>
+    <input type="text" name="authorName"/><br />
+
+    <label>Publication</label>
+    <input type="number" name="publication" /><br />
+
+
+    <label>BookShelf</label>
+    <select name="bookShelfId">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+    </select><br>
+    <input type="submit" value="Add" />
+</form>
+
+<h3><a asp-controller="Home" asp-action="BackToMainMenu">Back to Main</a></h3>

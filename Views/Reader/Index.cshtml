@@ -1,0 +1,29 @@
+﻿@using Library.Models;
+@model IEnumerable<Reader>
+<table>
+    
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Number of books</th>
+
+    </tr>
+
+
+    @foreach (Reader reader in Model)
+    {
+        <tr>
+            <td><a asp-controller="Reader" asp-action="ShowReader" asp-route-readerId="@reader.Id">@reader.Name</a></td>
+            <td>@reader.Age</td>
+
+            <td>@reader.Books.Count()</td>
+            <td></td>
+            <td><a asp-action="DeleteReader" asp-route-id="@reader.Id">Delete Reader</a></td>
+        </tr>
+    }
+</table>
+
+<a asp-action="AddReader">Add Readers</a><br />
+<a asp-action="AddBookToReader">Add book to reader</a>
+<h3><a asp-controller="Home" asp-action="BackToMainMenu">Back to Main</a></h3>
+
