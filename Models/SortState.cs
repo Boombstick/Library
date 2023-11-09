@@ -7,6 +7,8 @@
         PublicatinAsc,
         PublicatinDesc,
         AuthorAsc,
-        AuthorDesc
+        AuthorDesc,
+        BookShelfAsc,
+        BookShelfDesc,
     }
 }

@@ -8,6 +8,6 @@ namespace Library.Models
         public string Name { get; set; }
         public int Id { get; set; }
 
-        public int salary { get; set; }
+        public int Salary { get; set; }
     }
 }

@@ -10,12 +10,11 @@ namespace Library.Models
         public DbSet<Reader> Readers { get; set; } = null!;
         public DbSet<Librarian> Librarians { get; set; } = null!;
         public ApplicationContext() {
-            //Database.EnsureDeleted();
-            //Database.EnsureCreated();
+            Database.EnsureCreated();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = DESKTOP-6PRC2H4\\SQLEXPRESS; Database = LibraryDb; Trusted_Connection = True; TrustServerCertificate = Yes;");
+            optionsBuilder.UseSqlServer("Server = MYBOOK_ZENITH\\SQLEXPRESS; Database = LibraryDb; Trusted_Connection = True; TrustServerCertificate = Yes;");
         }
 
     }

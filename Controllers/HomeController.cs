@@ -113,6 +113,12 @@ namespace Library.Controllers
                 case SortState.AuthorDesc:
                     books = books.OrderByDescending(p => p.Author);
                     break;
+                case SortState.BookShelfAsc:
+                    books=books.OrderBy(p=> p.BookShelf);
+                    break;
+                case SortState.BookShelfDesc:
+                    books = books.OrderByDescending(p => p.BookShelf);
+                    break;
                 default:
                     books = books.OrderBy(p => p.Name);
                     break;
