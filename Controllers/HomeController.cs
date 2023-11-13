@@ -123,7 +123,7 @@ namespace Library.Controllers
                     books = books.OrderBy(p => p.Name);
                     break;
             }
-
+            
             //Paging
             var count = await books.CountAsync();
             var items = await books.Skip((page-1)*pageSize).Take(pageSize).ToListAsync();

@@ -19,11 +19,11 @@ namespace Library
             builder.Services.AddDbContext<ApplicationContext>();
             builder.Services.AddControllersWithViews();
             //builder.Services.AddAuthentication("Bearer").AddJwtBearer();
-            
 
 
             var app = builder.Build();
 
+            app.UseStaticFiles();
             app.UseAuthentication();
             app.UseAuthorization();
 
