@@ -6,6 +6,11 @@
     <meta content="Library" name="description" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
+
+    <link href="html/saas/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link href="/html/saas/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/html/saas/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+
     <title>Library</title>
 
 </head>
@@ -14,40 +19,79 @@
     <header class="container">
         <p>blabla</p>
     </header>
+    <div class="wrapper">
+        <div class="leftside-menu" style="background: #000">
 
-    <div class="leftside-menu">
+            <!-- LOGO -->
+            <a href="/Home/index" class="logo text-center logo-light">
+                <span class="logo-lg">
+                    <img src="/images/bibli.png" alt="" height="50">
+                </span>
+            </a>
 
-        <!-- ========== Left Sidebar Start ========== -->
-        <!-- LOGO -->
-        <a href="/Home/index" class="logo text-center logo-light">
-            <span class="logo-lg">
-                <img src="/images/bibli.png" alt="" height="50">
-            </span>
-        </a>
+            <div class="h-100" id="leftside-menu-container">
 
-        <div class="h-100" id="left-side-menu-container" data-simplebar>
-            <!--- Sidemenu -->
-            <ul class="side-nav">
-                <li class="side-nav-item">
-                    <a href="/Home/AddBook" class="side-nav-link">
-                        <i class="uil-table"></i>
-                        <span> Добавить книгу </span>
-                    </a>
-                </li>
-                <li class="side-nav"
-            </ul>
-            <!-- End Sidebar -->
+                <ul class="side-nav">
+                    <li class="side-nav-title side-nav-item" style="color: white">Menu</li>
+                    <!-- Books -->
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarBooks" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                            <span style="color:white"> Книги </span>
+                        </a>
+                        <div class="collapse" id="sidebarBooks">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a asp-controller="Home" asp-action="ShowAllBooks"><span style="color:white">Список всех книг</span></a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="AddBook"><span style="color:white">Добавить новую книгу</span></a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Readers -->
+                    <li class="side-nav-item">
+                        <a data-bs-toggle="collapse" href="#sidebarReaders" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                            <i class="uil-home-alt"></i>
+                            <span style="color:white"> Читатели </span>
+                        </a>
+                        <div class="collapse" id="sidebarReaders">
+                            <ul class="side-nav-second-level">
+                                <li>
+                                    <a asp-controller="Reader" asp-action="Index"><span style="color:white">Показать читателей</span></a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Reader" asp-action="AddReader"><span style="color:white">Добавить нового читателя</span></a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Reader" asp-action="AddBookToReader"><span style="color:white">Добавить книгу читателюу</span></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-page">
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
         </div>
     </div>
 
-    <div class="content-page">
-        <div class="container-fluid">
-            @RenderBody()
-        </div>
-    </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
 
+
+
+    <script src="/html/saas/assets/js/vendor.js"></script>
+    <script src="/html/saas/assets/js/app.js"></script>
+
+    <!-- third party js -->
+    <script src="/html/saas/assets/js/vendor/apexcharts.min.js"></script>
+    <script src="/html/saas/assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="/html/saas/assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- third party js ends -->
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

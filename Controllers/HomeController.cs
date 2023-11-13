@@ -155,7 +155,11 @@ namespace Library.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult BackToMainMenu() => RedirectToAction("Index");
+        public async Task<IActionResult> ShowAllBooks()
+        {
+            var Books = await db.Books.ToListAsync();
+            return View(Books);
+        }
         
     }
 }
