@@ -1,11 +1,8 @@
 ﻿using Library.Models;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authorization;
+using Library.Models.Books;
+using Library.Models.Users;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
-using System.Globalization;
-using System.Security.Claims;
 
 namespace Library.Controllers
 {
@@ -21,29 +18,29 @@ namespace Library.Controllers
                 Librarian martin = new Librarian { Name = "Martin" };
 
 
-                Reader zhenya = new Reader { Name = "Zhenya" ,Age =22};
-                Reader vanya = new Reader { Name = "Vanya" ,Age = 12};
+                Reader zhenya = new Reader { Name = "Zhenya", Age = 22 };
+                Reader vanya = new Reader { Name = "Vanya", Age = 12 };
 
-                Bookshelf bookshelf1 = new Bookshelf ();
-                Bookshelf bookshelf2 = new Bookshelf ();
+                Bookshelf bookshelf1 = new Bookshelf();
+                Bookshelf bookshelf2 = new Bookshelf();
 
                 Author oracle = new Author { Name = "Oracle" };
                 Author google = new Author { Name = "Google" };
                 Author microsoft = new Author { Name = "Microsoft" };
                 Author apple = new Author { Name = "Apple" };
 
-                Book user1 = new Book { Name = "Олег Васильев", Author = oracle, Publication = 26 ,BookShelf=bookshelf1};
+                Book user1 = new Book { Name = "Олег Васильев", Author = oracle, Publication = 26, BookShelf = bookshelf1 };
                 Book user2 = new Book { Name = "Александр Овсов", Author = oracle, Publication = 24, BookShelf = bookshelf1 };
                 Book user3 = new Book { Name = "Алексей Петров", Author = microsoft, Publication = 25, BookShelf = bookshelf1 };
                 Book user4 = new Book { Name = "Иван Иванов", Author = microsoft, Publication = 26, BookShelf = bookshelf1 };
                 Book user5 = new Book { Name = "Петр Андреев", Author = microsoft, Publication = 23, BookShelf = bookshelf2 };
-                Book user6 = new Book { Name = "Василий Иванов", Author = google, Publication   = 23, BookShelf = bookshelf2 };
+                Book user6 = new Book { Name = "Василий Иванов", Author = google, Publication = 23, BookShelf = bookshelf2 };
                 Book user7 = new Book { Name = "Олег Кузнецов", Author = google, Publication = 25, BookShelf = bookshelf2 };
-                Book user8 = new Book { Name = "Андрей Петров", Author = apple, Publication = 24 ,BookShelf = bookshelf2 };
+                Book user8 = new Book { Name = "Андрей Петров", Author = apple, Publication = 24, BookShelf = bookshelf2 };
 
                 context.Librarians.Add(martin);
                 context.Readers.AddRange(zhenya, vanya);
-                context.Bookshelf.AddRange(bookshelf1,bookshelf2);
+                context.Bookshelf.AddRange(bookshelf1, bookshelf2);
                 context.Authors.AddRange(oracle, google, microsoft, apple);
                 context.Books.AddRange(user1, user2, user3, user4, user5, user6, user7, user8);
                 context.SaveChanges();
@@ -77,7 +74,7 @@ namespace Library.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Index(string name,int author = 0, int page = 1,SortState sortOrder = SortState.NameAsc,int bookShelfId= 0) { 
+        public async Task<IActionResult> ShowAllBooks(string name,int author = 0, int page = 1,SortState sortOrder = SortState.NameAsc,int bookShelfId= 0) { 
             int pageSize = 4;
 
             //Filter
@@ -155,10 +152,10 @@ namespace Library.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> ShowAllBooks()
+        public  IActionResult Index()
         {
-            var Books = await db.Books.ToListAsync();
-            return View(Books);
+
+            return View();
         }
         
     }

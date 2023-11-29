@@ -1,9 +1,10 @@
 ﻿using Library.Models;
+using Library.Models.Books;
+using Library.Models.Users;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Library.Controllers
 {
@@ -33,12 +34,10 @@ namespace Library.Controllers
         [HttpPost]
         public async Task<IActionResult> AddReader(string name, int age)
         {
-            using(ApplicationContext db = new ApplicationContext())
-            {
+
                 Reader reader = new Reader { Name = name, Age = age };
                 db.Readers.Add(reader);
                 await db.SaveChangesAsync();
-            }
             return RedirectToAction("Index");
         }
 
@@ -84,7 +83,7 @@ namespace Library.Controllers
             {
                 Reader reader = db.Readers.FirstOrDefault(x=>x.Id== readerId);
                 Book book = db.Books.FirstOrDefault(x=>x.Id== bookId);
-
+                book.IsPicked = true;
                 reader.Books.Add(book);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

@@ -85,7 +85,6 @@ E:\VisualGIT\Library\bin\Debug\net7.0\Library.pdb
 E:\VisualGIT\Library\bin\Debug\net7.0\Azure.Core.dll
 E:\VisualGIT\Library\bin\Debug\net7.0\Azure.Identity.dll
 E:\VisualGIT\Library\bin\Debug\net7.0\Humanizer.dll
-E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -151,3 +150,12 @@ E:\VisualGIT\Library\obj\Debug\net7.0\Library.pdb
 E:\VisualGIT\Library\obj\Debug\net7.0\Library.genruntimeconfig.cache
 E:\VisualGIT\Library\obj\Debug\net7.0\ref\Library.dll
 E:\VisualGIT\Library\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout - Копировать.cshtml.rz.scp.css
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\VisualGIT\Library\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\VisualGIT\Library\obj\Debug\net7.0\Library.MvcApplicationPartsAssemblyInfo.cs

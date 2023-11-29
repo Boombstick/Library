@@ -1,6 +1,87 @@
-﻿@model IEnumerable<Book>
+﻿@using Library.Models
+@model IndexViewModel
 
-@foreach(var book in Model)
-{
-    <td>@book.Name</td>
-}
+<h2>Library</h2>
+<form method="get">
+
+    <label>Book </label>
+    <input name="name" value="@Model.FilterViewModel.SelectedName" />
+
+    <label>Author </label>
+    <select name="author" asp-items="@Model.FilterViewModel.Authors"></select>
+
+    <label>Bookshelf</label>
+    <input name="bookShelfId" type="number" value="@Model.FilterViewModel.SelectedBookShelf" />
+
+    <input type="submit" value="Filter" />
+</form>
+
+@* lable *@
+<table>
+    <tr>
+        <th>
+            <a asp-action="ShowAllBooks"
+               asp-route-sortOrder="@Model.SortViewModel.NameSort"
+               asp-route-name="@Model.FilterViewModel.SelectedName"
+               asp-route-author="@Model.FilterViewModel.SelectedAuthor">Name</a>
+        </th>
+        <th>
+            <a asp-action="ShowAllBooks"
+               asp-route-sortOrder="@Model.SortViewModel.AuthorSort"
+               asp-route-name="@Model.FilterViewModel.SelectedName"
+               asp-route-author="@Model.FilterViewModel.SelectedAuthor">Author</a>
+        </th>
+        <th>
+            <a asp-action="ShowAllBooks"
+               asp-route-sortOrder="@Model.SortViewModel.PublicationSort"
+               asp-route-name="@Model.FilterViewModel.SelectedName"
+               asp-route-author="@Model.FilterViewModel.SelectedAuthor">Publication</a>
+
+        </th>
+        <th>
+            <a asp-action="ShowAllBooks"
+               asp-route-sortOrder="@Model.SortViewModel.BookShelfSort"
+               asp-route-bookShelfId="@Model.FilterViewModel.SelectedBookShelf">BookShelf</a>
+        </th>
+        <th>
+            <a>Is Picked</a>
+        </th>
+
+    </tr>
+
+    @* Books *@
+    @foreach (Book book in Model.Books)
+    {
+        <tr>
+            <td>@book.Name</td>
+            <td>@book.Author?.Name</td>
+            <td>@book.Publication</td>
+            <td>@book.BookShelfId</td>
+            <td>@book.IsPicked</td>
+            <td><a asp-action="DeleteBook" asp-route-id=@book.Id>Delete</a></td>
+        </tr>
+    }
+</table>
+
+
+@* Pagging *@
+<p>
+    @if (Model.PageViewModel.HasPreviousPage)
+    {
+        <a asp-action="ShowAllBooks"
+           asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+           asp-route-name="@Model.FilterViewModel.SelectedName"
+           asp-route-company="@Model.FilterViewModel.SelectedAuthor"
+           asp-route-sordOrder="@Model.SortViewModel.Current">Back</a>
+    }
+
+    @if (Model.PageViewModel.HasNextPage)
+    {
+        <a asp-action="ShowAllBooks"
+           asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+           asp-route-name="@Model.FilterViewModel.SelectedName"
+           asp-route-company="@Model.FilterViewModel.SelectedAuthor"
+           asp-route-sordOrder="@Model.SortViewModel.Current">Next</a>
+    }
+
+</p>
