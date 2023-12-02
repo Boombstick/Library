@@ -74,7 +74,6 @@ G:\VisualStudioFiles\Library\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Desi
 G:\VisualStudioFiles\Library\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 G:\VisualStudioFiles\Library\bin\Debug\net7.0\Mono.TextTemplating.dll
 G:\VisualStudioFiles\Library\bin\Debug\net7.0\System.CodeDom.dll
-E:\VisualGIT\Library\bin\Debug\net7.0\appsettings.Development.json
 E:\VisualGIT\Library\bin\Debug\net7.0\appsettings.json
 E:\VisualGIT\Library\bin\Debug\net7.0\Library.staticwebassets.runtime.json
 E:\VisualGIT\Library\bin\Debug\net7.0\Library.exe

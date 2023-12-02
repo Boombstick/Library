@@ -20,7 +20,7 @@ namespace Library
 
             builder.Services.AddDbContext<ApplicationContext>();
 
-            builder.Services.AddDefaultIdentity<LibraryUser>(/*options => options.SignIn.RequireConfirmedAccount = false*/)
+            builder.Services.AddDefaultIdentity<LibraryUser>(/*options => options.SignIn.RequireConfirmedAccount = true*/)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>();
 

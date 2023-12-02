@@ -1,0 +1,1529 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\VisualGIT\\Library\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Library.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Library.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-calendar.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-calendar.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-chat.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-chat.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-checkout.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-checkout.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-customers.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-customers.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-orders-details.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-orders-details.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-orders.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-orders.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-products-details.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-products-details.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-products.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-products.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-sellers.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-sellers.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-ecommerce-shopping-cart.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-ecommerce-shopping-cart.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-email-inbox.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-email-inbox.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-email-read.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-email-read.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-file-manager.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-file-manager.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-kanban.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-kanban.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-projects-add.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-projects-add.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-projects-details.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-projects-details.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-projects-gantt.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-projects-gantt.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-projects-list.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-projects-list.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-social-feed.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-social-feed.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-tasks-details.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-tasks-details.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\apps-tasks.html",
+      "PackagePath": "staticwebassets\\html\\saas\\apps-tasks.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\app.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\icons-rtl.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\icons-rtl.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\icons-rtl.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\icons-rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\icons.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\icons.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\icons.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\icons.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\icons.min.css.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\icons.min.css.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\32px.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\32px.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\britecharts.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\britecharts.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\buttons.bootstrap5.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\buttons.bootstrap5.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\dataTables.bootstrap5.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\dataTables.bootstrap5.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\fixedColumns.bootstrap5.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\fixedColumns.bootstrap5.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\fixedHeader.bootstrap5.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\fixedHeader.bootstrap5.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\frappe-gantt.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\frappe-gantt.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\fullcalendar.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\fullcalendar.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\jquery-jvectormap-1.2.2.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\jquery-jvectormap-1.2.2.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\jstree.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\jstree.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\quill.bubble.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\quill.bubble.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\quill.core.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\quill.core.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\quill.snow.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\quill.snow.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\responsive.bootstrap5.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\responsive.bootstrap5.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\select.bootstrap5.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\select.bootstrap5.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\simplemde.min.css",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\simplemde.min.css"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\throbber.gif",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\throbber.gif"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\data\\vendor\\ajax_demo_children.json",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\data\\vendor\\ajax_demo_children.json"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Bold.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Bold.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Bold.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Bold.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Bold.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Bold.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Bold.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Bold.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Light.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Light.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Light.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Light.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Light.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Light.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Light.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Light.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Light.woff2",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Light.woff2"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Regular.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Regular.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Regular.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Regular.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Regular.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Regular.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Regular.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-Regular.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-SemiBold.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-SemiBold.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-SemiBold.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-SemiBold.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-SemiBold.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-SemiBold.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\Nunito-SemiBold.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\dripicons-v2.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\dripicons-v2.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\dripicons-v2.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\dripicons-v2.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\dripicons-v2.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\dripicons-v2.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\dripicons-v2.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\dripicons-v2.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.woff2",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\unicons.eot",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\unicons.eot"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\unicons.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\unicons.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\unicons.ttf",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\unicons.ttf"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\unicons.woff",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\unicons.woff"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\fonts\\unicons.woff2",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\fonts\\unicons.woff2"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\attached-files\\img-1.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\attached-files\\img-1.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\attached-files\\img-2.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\attached-files\\img-2.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\attached-files\\img-3.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\attached-files\\img-3.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\barcode.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\barcode.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\bg-auth.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\bg-auth.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\bg-pattern-dark.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\bg-pattern-dark.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\bg-pattern-light.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\bg-pattern-light.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\bg-pattern.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\bg-pattern.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\brands\\bitbucket.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\brands\\bitbucket.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\brands\\dribbble.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\brands\\dribbble.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\brands\\dropbox.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\brands\\dropbox.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\brands\\g-suite.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\brands\\g-suite.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\brands\\github.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\brands\\github.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\brands\\slack.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\brands\\slack.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\email-campaign.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\email-campaign.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\features-1.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\features-1.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\features-2.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\features-2.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\file-searching.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\file-searching.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\flags\\french.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\flags\\french.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\flags\\germany.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\flags\\germany.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\flags\\italy.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\flags\\italy.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\flags\\russia.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\flags\\russia.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\flags\\spain.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\flags\\spain.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\flags\\us.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\flags\\us.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\help-icon.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\help-icon.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\ico-instagram.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\ico-instagram.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\ico-messenger.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\ico-messenger.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\layouts\\layout-1.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\layouts\\layout-1.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\layouts\\layout-2.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\layouts\\layout-2.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\layouts\\layout-3.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\layouts\\layout-3.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\layouts\\layout-4.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\layouts\\layout-4.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\layouts\\layout-5.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\layouts\\layout-5.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\layouts\\layout-6.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\layouts\\layout-6.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\logo-dark.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\logo-dark.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\logo-light.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\logo-light.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\logo_sm.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\logo_sm.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\logo_sm_dark.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\logo_sm_dark.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\mail_sent.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\mail_sent.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\maintenance.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\maintenance.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\amazon.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\amazon.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\american-express.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\american-express.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\btc.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\btc.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\citi.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\citi.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\cod.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\cod.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\discover.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\discover.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\master.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\master.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\payoneer.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\payoneer.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\paypal.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\paypal.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\stripe.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\stripe.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\payments\\visa.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\payments\\visa.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\products\\product-1.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\products\\product-1.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\products\\product-2.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\products\\product-2.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\products\\product-3.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\products\\product-3.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\products\\product-4.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\products\\product-4.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\products\\product-5.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\products\\product-5.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\products\\product-6.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\products\\product-6.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\projects\\project-1.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\projects\\project-1.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\projects\\project-2.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\projects\\project-2.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\projects\\project-3.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\projects\\project-3.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\projects\\project-4.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\projects\\project-4.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\report.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\report.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\small\\small-1.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\small\\small-1.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\small\\small-2.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\small\\small-2.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\small\\small-3.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\small\\small-3.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\small\\small-4.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\small\\small-4.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\startman.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\startman.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\startup.svg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\startup.svg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-1.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-10.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-10.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-2.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-3.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-4.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-5.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-6.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-7.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-8.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-8.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\users\\avatar-9.jpg",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\users\\avatar-9.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\images\\waves.png",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\images\\waves.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\app.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\app.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\app.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\app.min.js.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\app.min.js.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-area.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-area.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-bar.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-bar.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-bubble.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-bubble.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-candlestick.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-candlestick.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-column.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-column.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-heatmap.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-heatmap.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-line.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-line.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-mixed.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-mixed.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-pie.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-pie.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-radar.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-radar.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-radialbar.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-radialbar.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-scatter.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-scatter.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.apex-sparklines.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.apex-sparklines.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.britechart.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.britechart.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.calendar.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.calendar.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.chartjs.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.chartjs.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.customers.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.customers.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.dashboard-analytics.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.dashboard-analytics.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.dashboard-crm.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.dashboard-crm.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.dashboard-projects.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.dashboard-projects.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.dashboard.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.dashboard.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.datatable-init.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.datatable-init.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.form-wizard.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.form-wizard.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.google-maps.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.google-maps.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.inbox.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.inbox.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.jstree.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.jstree.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.materialdesignicons.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.materialdesignicons.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.products.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.products.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.profile.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.profile.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.project-detail.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.project-detail.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.project-gantt.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.project-gantt.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.quilljs.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.quilljs.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.sellers.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.sellers.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.simplemde.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.simplemde.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.sparkline.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.sparkline.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.tasks.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.tasks.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.timepicker.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.timepicker.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.toastr.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.toastr.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.typehead.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.typehead.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.vector-maps.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.vector-maps.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\pages\\demo.widgets.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\pages\\demo.widgets.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.chat.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.chat.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.dragula.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.dragula.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.fileupload.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.fileupload.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.range-slider.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.range-slider.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.rating.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.rating.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.scrollbar.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.scrollbar.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\ui\\component.todo.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\ui\\component.todo.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor.min.js.map",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor.min.js.map"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\apexcharts.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\britecharts.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\britecharts.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\buttons.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\buttons.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\buttons.flash.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\buttons.flash.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\buttons.html5.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\buttons.print.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\d3.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\d3.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dataTables.bootstrap5.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dataTables.bootstrap5.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dataTables.checkboxes.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dataTables.checkboxes.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dataTables.keyTable.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dataTables.keyTable.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dataTables.select.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dataTables.select.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dragula.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dragula.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\dropzone.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\fixedColumns.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\fixedColumns.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\fixedHeader.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\fixedHeader.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\frappe-gantt.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\frappe-gantt.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\fullcalendar.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\fullcalendar.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\gmaps.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\handlebars.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\handlebars.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\ion.rangeSlider.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\ion.rangeSlider.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-1.2.2.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-1.2.2.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-au-mill-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-au-mill-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-ca-lcc-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-ca-lcc-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-es-merc.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-es-merc.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-es-mill.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-es-mill.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-europe-mill-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-europe-mill-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-fr-merc-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-fr-merc-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-in-mill-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-in-mill-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-uk-mill-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-uk-mill-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-us-il-chicago-mill-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-us-il-chicago-mill-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-us-merc-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-us-merc-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-world-mill-en.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-jvectormap-world-mill-en.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery-ui.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery.rateit.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery.rateit.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\jstree.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\jstree.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\quill.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\quill.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\responsive.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\responsive.bootstrap5.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\simplemde.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\simplemde.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\assets\\js\\vendor\\typeahead.bundle.min.js",
+      "PackagePath": "staticwebassets\\html\\saas\\assets\\js\\vendor\\typeahead.bundle.min.js"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-area.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-area.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-bar.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-bar.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-bubble.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-bubble.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-candlestick.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-candlestick.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-column.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-column.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-heatmap.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-heatmap.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-line.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-line.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-mixed.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-mixed.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-pie.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-pie.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-radar.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-radar.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-radialbar.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-radialbar.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-scatter.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-scatter.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-apex-sparklines.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-apex-sparklines.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-brite.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-brite.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-chartjs.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-chartjs.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\charts-sparkline.html",
+      "PackagePath": "staticwebassets\\html\\saas\\charts-sparkline.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\dashboard-analytics.html",
+      "PackagePath": "staticwebassets\\html\\saas\\dashboard-analytics.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\dashboard-crm.html",
+      "PackagePath": "staticwebassets\\html\\saas\\dashboard-crm.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\dashboard-projects.html",
+      "PackagePath": "staticwebassets\\html\\saas\\dashboard-projects.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\extended-dragula.html",
+      "PackagePath": "staticwebassets\\html\\saas\\extended-dragula.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\extended-range-slider.html",
+      "PackagePath": "staticwebassets\\html\\saas\\extended-range-slider.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\extended-ratings.html",
+      "PackagePath": "staticwebassets\\html\\saas\\extended-ratings.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\extended-scrollbar.html",
+      "PackagePath": "staticwebassets\\html\\saas\\extended-scrollbar.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\extended-scrollspy.html",
+      "PackagePath": "staticwebassets\\html\\saas\\extended-scrollspy.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\extended-treeview.html",
+      "PackagePath": "staticwebassets\\html\\saas\\extended-treeview.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\form-advanced.html",
+      "PackagePath": "staticwebassets\\html\\saas\\form-advanced.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\form-editors.html",
+      "PackagePath": "staticwebassets\\html\\saas\\form-editors.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\form-elements.html",
+      "PackagePath": "staticwebassets\\html\\saas\\form-elements.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\form-fileuploads.html",
+      "PackagePath": "staticwebassets\\html\\saas\\form-fileuploads.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\form-validation.html",
+      "PackagePath": "staticwebassets\\html\\saas\\form-validation.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\form-wizard.html",
+      "PackagePath": "staticwebassets\\html\\saas\\form-wizard.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\icons-dripicons.html",
+      "PackagePath": "staticwebassets\\html\\saas\\icons-dripicons.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\icons-mdi.html",
+      "PackagePath": "staticwebassets\\html\\saas\\icons-mdi.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\icons-unicons.html",
+      "PackagePath": "staticwebassets\\html\\saas\\icons-unicons.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\index.html",
+      "PackagePath": "staticwebassets\\html\\saas\\index.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\landing.html",
+      "PackagePath": "staticwebassets\\html\\saas\\landing.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\layouts-detached.html",
+      "PackagePath": "staticwebassets\\html\\saas\\layouts-detached.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\layouts-full.html",
+      "PackagePath": "staticwebassets\\html\\saas\\layouts-full.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\layouts-horizontal.html",
+      "PackagePath": "staticwebassets\\html\\saas\\layouts-horizontal.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\maps-google.html",
+      "PackagePath": "staticwebassets\\html\\saas\\maps-google.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\maps-vector.html",
+      "PackagePath": "staticwebassets\\html\\saas\\maps-vector.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-404-alt.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-404-alt.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-404.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-404.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-500.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-500.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-confirm-mail-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-confirm-mail-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-confirm-mail.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-confirm-mail.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-faq.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-faq.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-invoice.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-invoice.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-lock-screen-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-lock-screen-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-lock-screen.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-lock-screen.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-login-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-login-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-login.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-login.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-logout-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-logout-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-logout.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-logout.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-maintenance.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-maintenance.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-preloader.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-preloader.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-pricing.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-pricing.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-profile-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-profile-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-profile.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-profile.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-recoverpw-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-recoverpw-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-recoverpw.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-recoverpw.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-register-2.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-register-2.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-register.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-register.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-starter.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-starter.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\pages-timeline.html",
+      "PackagePath": "staticwebassets\\html\\saas\\pages-timeline.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\tables-basic.html",
+      "PackagePath": "staticwebassets\\html\\saas\\tables-basic.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\tables-datatable.html",
+      "PackagePath": "staticwebassets\\html\\saas\\tables-datatable.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-accordions.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-accordions.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-alerts.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-alerts.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-avatars.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-avatars.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-badges.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-badges.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-breadcrumb.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-breadcrumb.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-buttons.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-buttons.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-cards.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-cards.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-carousel.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-carousel.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-dropdowns.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-dropdowns.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-embed-video.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-embed-video.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-grid.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-grid.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-list-group.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-list-group.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-modals.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-modals.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-notifications.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-notifications.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-offcanvas.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-offcanvas.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-pagination.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-pagination.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-placeholders.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-placeholders.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-popovers.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-popovers.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-progress.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-progress.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-ribbons.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-ribbons.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-spinners.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-spinners.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-tabs.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-tabs.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-tooltips.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-tooltips.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\ui-typography.html",
+      "PackagePath": "staticwebassets\\html\\saas\\ui-typography.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\html\\saas\\widgets.html",
+      "PackagePath": "staticwebassets\\html\\saas\\widgets.html"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\images\\bibli.png",
+      "PackagePath": "staticwebassets\\images\\bibli.png"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Library.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Library.props",
+      "PackagePath": "build\\Library.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Library.props",
+      "PackagePath": "buildMultiTargeting\\Library.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Library.props",
+      "PackagePath": "buildTransitive\\Library.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
