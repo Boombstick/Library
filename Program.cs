@@ -8,6 +8,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using System.Configuration;
 using Library.Models.Account;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Library
 {
@@ -20,6 +21,7 @@ namespace Library
 
             builder.Services.AddDbContext<ApplicationContext>();
 
+
             builder.Services.AddDefaultIdentity<LibraryUser>(/*options => options.SignIn.RequireConfirmedAccount = true*/)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>();
@@ -27,6 +29,12 @@ namespace Library
             builder.Services.AddControllersWithViews();
 
 
+            builder.Services.ConfigureApplicationCookie(options => {
+                options.AccessDeniedPath = "/Error/AccessDenied";
+                options.LoginPath = "/Account/Login";
+                options.LogoutPath = "/Account/Logout";
+                //options.ReturnUrlParameter = "";
+            });
             var app = builder.Build();
 
             app.UseStaticFiles();

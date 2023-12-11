@@ -13,38 +13,6 @@ namespace Library.Controllers
         public HomeController(ApplicationContext context)
         {
             db = context;
-            if (!context.Authors.Any())
-            {
-                Librarian martin = new Librarian { Name = "Martin" };
-
-
-                Reader zhenya = new Reader { Name = "Zhenya", Age = 22 };
-                Reader vanya = new Reader { Name = "Vanya", Age = 12 };
-
-                Bookshelf bookshelf1 = new Bookshelf();
-                Bookshelf bookshelf2 = new Bookshelf();
-
-                Author oracle = new Author { Name = "Oracle" };
-                Author google = new Author { Name = "Google" };
-                Author microsoft = new Author { Name = "Microsoft" };
-                Author apple = new Author { Name = "Apple" };
-
-                Book user1 = new Book { Name = "Олег Васильев", Author = oracle, Publication = 26, BookShelf = bookshelf1 };
-                Book user2 = new Book { Name = "Александр Овсов", Author = oracle, Publication = 24, BookShelf = bookshelf1 };
-                Book user3 = new Book { Name = "Алексей Петров", Author = microsoft, Publication = 25, BookShelf = bookshelf1 };
-                Book user4 = new Book { Name = "Иван Иванов", Author = microsoft, Publication = 26, BookShelf = bookshelf1 };
-                Book user5 = new Book { Name = "Петр Андреев", Author = microsoft, Publication = 23, BookShelf = bookshelf2 };
-                Book user6 = new Book { Name = "Василий Иванов", Author = google, Publication = 23, BookShelf = bookshelf2 };
-                Book user7 = new Book { Name = "Олег Кузнецов", Author = google, Publication = 25, BookShelf = bookshelf2 };
-                Book user8 = new Book { Name = "Андрей Петров", Author = apple, Publication = 24, BookShelf = bookshelf2 };
-
-                context.Librarians.Add(martin);
-                context.Readers.AddRange(zhenya, vanya);
-                context.Bookshelf.AddRange(bookshelf1, bookshelf2);
-                context.Authors.AddRange(oracle, google, microsoft, apple);
-                context.Books.AddRange(user1, user2, user3, user4, user5, user6, user7, user8);
-                context.SaveChanges();
-            }
         }
         
         [HttpGet]

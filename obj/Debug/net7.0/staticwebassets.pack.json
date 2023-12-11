@@ -1501,12 +1501,20 @@
       "PackagePath": "staticwebassets\\html\\saas\\widgets.html"
     },
     {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\images\\Avatar.jpeg",
+      "PackagePath": "staticwebassets\\images\\Avatar.jpeg"
+    },
+    {
       "Id": "E:\\VisualGIT\\Library\\wwwroot\\images\\bibli.png",
       "PackagePath": "staticwebassets\\images\\bibli.png"
     },
     {
       "Id": "E:\\VisualGIT\\Library\\wwwroot\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Library.Microsoft.AspNetCore.StaticWebAssets.props",

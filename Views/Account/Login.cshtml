@@ -1,25 +1,105 @@
 ﻿@using Library.Models.Account
 @model LoginViewModel
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Вход</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico">
 
-<h2>Вход в библиотеку</h2>
-<form method="post" asp-controller="Account" asp-action="Login" 
-asp-route-returnUrl="@Model.ReturnUrl">
-    <div asp-validation-summary="ModelOnly"></div>
-    <div>
-        <label asp-for="Name">Введите имя</label><br />
-        <input asp-for="Name" />
-        <span asp-validation-for="Name"></span>
+    <!-- App css -->
+    <link href="/html/saas/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/html/saas/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+    <link href="/html/saas/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+
+</head>
+
+<body>
+    <div class="account-pages pt-2 pt-sm-5 pb-4 pb-sm-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-4 col-lg-5">
+                    <!-- Register form start -->
+                    <div class="card">
+                        <!-- Logo-->
+                        <div class="card-header pt-4 pb-4 text-center bg-primary">
+                            <a asp-controller="Home" asp-action="Index">
+                                <span><img src="/images/logo.png" alt="" height="50"></span>
+                            </a>
+                        </div>
+                        <!-- Register form start -->
+                        <div class="card-body p-4">
+
+                            <div class="text-center w-75 m-auto">
+                                <h4 class="text-dark-50 text-center mt-0 fw-bold">Вход в библиотеку</h4>
+
+                            </div>
+
+                            <form method="post" asp-controller="Account" asp-action="Login"
+                                  asp-route-returnUrl="@Model.ReturnUrl">
+                                <div asp-validation-summary="ModelOnly"></div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Login" class="form-label">Логин</label>
+                                    <input asp-for="Login" class="form-control" placeholder="Введите логин" />
+                                    <span asp-validation-for="Login"></span>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label asp-for="Password" class="form-label">Пароль</label>
+                                    <div class="input-group input-group-merge">
+                                        <input asp-for="Password" class="form-control" />
+                                        <div class="input-group-text" data-password="false">
+                                            <span class="password-eye"></span>
+                                        </div>
+                                    </div>
+                                    <span asp-validation-for="Password"></span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input asp-for="IsRemember" type="checkbox" class="form-check-input">
+                                        <label asp-for="IsRemember"  class="form-check-label">Запомнить вход?</label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 text-center">
+                                    <button class="btn btn-primary" type="submit"> Войти </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- end card -->
+
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <p class="text-muted">Нет Аккаунта? <a asp-controller="Account" asp-action="Register" class="text-muted ms-1"><b>Зарегистрироваться</b></a></p>
+                        </div> <!-- end col-->
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
     </div>
-    <div>
-        <label asp-for="Password">Пароль</label><br />
-        <input asp-for="Password" />
-        <span asp-validation-for="Password"></span>
-    </div>
-    <div>
-        <label asp-for="IsRemember">Запомнить вход?</label>
-        <input asp-for="IsRemember" />
-    </div>
-    <div>
-        <input type="submit"  value="Войти" />
-    </div>
-</form>
+    <!-- end page -->
+
+    <footer class="footer footer-alt">
+
+    </footer>
+
+    <!-- bundle -->
+    <script src="/html/saas/assets/js/vendor.min.js"></script>
+    <script src="/html/saas/assets/js/app.min.js"></script>
+
+</body>
+</html>

@@ -15,5 +15,10 @@ namespace Library.Models.Account
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Пароли не совпадают")]
         public string PasswordConfirm { get; set; }
+
+        [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
     }
 }

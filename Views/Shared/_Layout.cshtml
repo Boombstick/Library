@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims;
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -15,10 +19,6 @@
 
 </head>
 <body>
-
-    <header class="container">
-        <p>blabla</p>
-    </header>
     <div class="wrapper">
         <div class="leftside-menu" style="background: #000">
 
@@ -28,7 +28,7 @@
                     <img src="/images/bibli.png" alt="" height="50">
                 </span>
             </a>
-
+            <!--Leftside Menu-->
             <div class="h-100" id="leftside-menu-container">
 
                 <ul class="side-nav">
@@ -45,7 +45,7 @@
                                 </li>
                                 <li>
                                     <a asp-controller="Home" asp-action="AddBook"><span style="color:white">Добавить новую книгу</span></a>
-                                </li> 
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -61,9 +61,6 @@
                                     <a asp-controller="Reader" asp-action="Index"><span style="color:white">Показать читателей</span></a>
                                 </li>
                                 <li>
-                                    <a asp-controller="Reader" asp-action="AddReader"><span style="color:white">Добавить нового читателя</span></a>
-                                </li>
-                                <li>
                                     <a asp-controller="Reader" asp-action="AddBookToReader"><span style="color:white">Добавить книгу читателюу</span></a>
                                 </li>
 
@@ -74,8 +71,66 @@
             </div>
         </div>
         <div class="content-page">
-            <div class="container-fluid">
-                @RenderBody()
+            <div class="content">
+                <!-- Topbar Start -->
+                <div class="navbar-custom">
+                    <ul class="list-unstyled topbar-menu float-end mb-0">
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
+                               aria-expanded="false">
+                                <span class="account-user-avatar">
+                                    <img src="/images/Avatar.jpeg" alt="user-image" class="rounded-circle">
+                                </span>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <span>
+                                        <span class="account-user-name">@User.Identity.Name</span>
+                                        <span class="account-position">Role Layout 85</span>
+                                    </span>
+                                }
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                <!-- item-->
+                                <a asp-action="ShowReader" asp-controller="User" asp-route-userId="@userId" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-account-circle me-1"></i>
+                                    <span>Профиль</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-account-edit me-1"></i>
+                                    <span>Settings</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-lifebuoy me-1"></i>
+                                    <span>Support</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-lock-outline me-1"></i>
+                                    <span>Lock Screen</span>
+                                </a>
+
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <i class="mdi mdi-logout me-1"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button-menu-mobile open-left">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+
+                </div>
+                <!-- end Topbar -->
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
             </div>
         </div>
     </div>

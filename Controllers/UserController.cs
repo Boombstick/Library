@@ -1,16 +1,20 @@
-﻿using Library.Models.Account;
+﻿using Library.Models;
+using Library.Models.Account;
 using Library.Models.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Library.Controllers
 {
     public class UserController : Controller
     {
-        UserManager<LibraryUser> _userManager;
-        public UserController(UserManager<LibraryUser> userManager)
+        private UserManager<LibraryUser> _userManager;
+        private ApplicationContext _db;
+        public UserController(UserManager<LibraryUser> userManager, ApplicationContext db)
         {
             _userManager = userManager;
+            _db = db;
         }
         public IActionResult Index()
         {
@@ -126,6 +130,18 @@ namespace Library.Controllers
             }
             return View(model);
 
+        }
+        [HttpGet]
+        public async Task<IActionResult> ShowReader(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user==null)
+            {
+                return NotFound();
+            }
+            var reader = _db.Readers.Include(x => x.Books).FirstOrDefault(x => x.Id == user.Reader_Id);
+            if (reader != null) return View(reader);
+            return Content("Error");
         }
     }
 }

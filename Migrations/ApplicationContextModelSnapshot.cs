@@ -22,7 +22,7 @@ namespace Library.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Library.Areas.Identity.Data.LibraryUser", b =>
+            modelBuilder.Entity("Library.Models.Account.LibraryUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -64,6 +64,9 @@ namespace Library.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("Reader_Id")
+                        .HasColumnType("int");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -87,7 +90,7 @@ namespace Library.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Library.Models.Author", b =>
+            modelBuilder.Entity("Library.Models.Books.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -103,7 +106,7 @@ namespace Library.Migrations
                     b.ToTable("Authors");
                 });
 
-            modelBuilder.Entity("Library.Models.Book", b =>
+            modelBuilder.Entity("Library.Models.Books.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -140,7 +143,7 @@ namespace Library.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("Library.Models.Bookshelf", b =>
+            modelBuilder.Entity("Library.Models.Books.Bookshelf", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -153,7 +156,7 @@ namespace Library.Migrations
                     b.ToTable("Bookshelf");
                 });
 
-            modelBuilder.Entity("Library.Models.Librarian", b =>
+            modelBuilder.Entity("Library.Models.Users.Reader", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -161,30 +164,11 @@ namespace Library.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Salary")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Librarians");
-                });
-
-            modelBuilder.Entity("Library.Models.Reader", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Age")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -326,17 +310,17 @@ namespace Library.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Library.Models.Book", b =>
+            modelBuilder.Entity("Library.Models.Books.Book", b =>
                 {
-                    b.HasOne("Library.Models.Author", "Author")
+                    b.HasOne("Library.Models.Books.Author", "Author")
                         .WithMany("Books")
                         .HasForeignKey("AuthorId");
 
-                    b.HasOne("Library.Models.Bookshelf", "BookShelf")
+                    b.HasOne("Library.Models.Books.Bookshelf", "BookShelf")
                         .WithMany()
                         .HasForeignKey("BookShelfId");
 
-                    b.HasOne("Library.Models.Reader", "Reader")
+                    b.HasOne("Library.Models.Users.Reader", "Reader")
                         .WithMany("Books")
                         .HasForeignKey("ReaderId");
 
@@ -358,7 +342,7 @@ namespace Library.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("Library.Areas.Identity.Data.LibraryUser", null)
+                    b.HasOne("Library.Models.Account.LibraryUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -367,7 +351,7 @@ namespace Library.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("Library.Areas.Identity.Data.LibraryUser", null)
+                    b.HasOne("Library.Models.Account.LibraryUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -382,7 +366,7 @@ namespace Library.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Library.Areas.Identity.Data.LibraryUser", null)
+                    b.HasOne("Library.Models.Account.LibraryUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -391,19 +375,19 @@ namespace Library.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("Library.Areas.Identity.Data.LibraryUser", null)
+                    b.HasOne("Library.Models.Account.LibraryUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Library.Models.Author", b =>
+            modelBuilder.Entity("Library.Models.Books.Author", b =>
                 {
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("Library.Models.Reader", b =>
+            modelBuilder.Entity("Library.Models.Users.Reader", b =>
                 {
                     b.Navigation("Books");
                 });

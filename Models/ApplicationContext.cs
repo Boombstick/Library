@@ -14,7 +14,7 @@ public class ApplicationContext : IdentityDbContext<LibraryUser>
     public DbSet<Author> Authors { get; set; } = null!;
     public DbSet<Bookshelf> Bookshelf { get; set; } = null!;
     public DbSet<Reader> Readers { get; set; } = null!;
-    public DbSet<Librarian> Librarians { get; set; } = null!;
+
     public ApplicationContext()
     {
     }

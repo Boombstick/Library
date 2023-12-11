@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RlNEZn9SS0ecIXcGOG4XLXFnxvCLpg+sesfloCN+yGc=",
+  "Hash": "aFg+Y0GED99ZRU1+iwMfzyDXNBuqNzQa5r5GSFg6bD8=",
   "Source": "Library",
   "BasePath": "_content/Library",
   "Mode": "Default",
@@ -7429,6 +7429,23 @@
       "OriginalItemSpec": "wwwroot\\html\\saas\\widgets.html"
     },
     {
+      "Identity": "E:\\VisualGIT\\Library\\wwwroot\\images\\Avatar.jpeg",
+      "SourceId": "Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VisualGIT\\Library\\wwwroot\\",
+      "BasePath": "_content/Library",
+      "RelativePath": "images/Avatar.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Avatar.jpeg"
+    },
+    {
       "Identity": "E:\\VisualGIT\\Library\\wwwroot\\images\\bibli.png",
       "SourceId": "Library",
       "SourceType": "Discovered",
@@ -7461,6 +7478,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\VisualGIT\\Library\\wwwroot\\images\\logo.png",
+      "SourceId": "Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VisualGIT\\Library\\wwwroot\\",
+      "BasePath": "_content/Library",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     }
   ]
 }

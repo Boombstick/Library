@@ -12,8 +12,7 @@
     @foreach (Reader reader in Model)
     {
         <tr>
-            <td><a asp-controller="Reader" asp-action="ShowReader" asp-route-readerId="@reader.Id">@reader.Name</a></td>
-            <td>@reader.Age</td>
+            <td><a asp-controller="Reader" asp-action="ShowReader" asp-route-readerId="@reader.Id">@reader.FullName</a></td>
 
             <td>@reader.Books.Count()</td>
             <td></td>

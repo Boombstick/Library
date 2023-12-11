@@ -1,6 +1,9 @@
-﻿using Library.Models.Account;
+﻿using Library.Models;
+using Library.Models.Account;
+using Library.Models.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Library.Controllers
 {
@@ -8,11 +11,13 @@ namespace Library.Controllers
     {
         private readonly UserManager<LibraryUser> _userManager;
         private readonly SignInManager<LibraryUser> _signInManager;
+        private readonly ApplicationContext _db;
 
-        public AccountController(SignInManager<LibraryUser> signInManager, UserManager<LibraryUser> userManager)
+        public AccountController(SignInManager<LibraryUser> signInManager, UserManager<LibraryUser> userManager, ApplicationContext applicationContext)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _db = applicationContext;
         }
         [HttpGet]
         public IActionResult Register()
@@ -22,11 +27,16 @@ namespace Library.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            LibraryUser user = new LibraryUser { UserName = model.Name, Email = model.Email };
+            LibraryUser user = new LibraryUser { UserName = model.Name, Email = model.Email};
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
             {
+                Reader reader = new Reader { FirstName = model.FirstName, LastName = model.LastName };
+                _db.Readers.Add(reader);
+                var liss = await _db.Readers.OrderByDescending(x => x.Id).FirstOrDefaultAsync();
+                user.Reader_Id = liss.Id+1;
+                await _db.SaveChangesAsync();
                 await _signInManager.SignInAsync(user, false);
                 return RedirectToAction("Index", "Home");
             }
@@ -51,22 +61,26 @@ namespace Library.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByNameAsync(model.Name);
-                var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsRemember, false);
-                if (result.Succeeded)
+                var user = await _userManager.FindByNameAsync(model.Login);
+                if (user != null)
                 {
-                    if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.IsRemember, false);
+                    if (result.Succeeded)
                     {
-                        return Redirect(model.ReturnUrl);
+                        if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                        {
+                            return Redirect(model.ReturnUrl);
+                        }
+                        else
+                        {
+                            ViewBag.Id = user.Id;
+                            return RedirectToAction("Index", "Home");
+                        }
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        ModelState.AddModelError(string.Empty, "Неправильный логин или пароль");
                     }
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Неправильный логин или пароль");
                 }
             }
             return View(model);
