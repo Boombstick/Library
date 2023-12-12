@@ -114,10 +114,10 @@ namespace Library.Controllers
                 {
                     db.Books.Remove(book);
                     await db.SaveChangesAsync();    
-                    return RedirectToAction("Index");
+                    return RedirectToAction("ShowAllBooks");
                 }
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("ShowAllBooks");
         }
 
         public  IActionResult Index()

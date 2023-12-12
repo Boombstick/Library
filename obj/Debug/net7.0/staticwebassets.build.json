@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aFg+Y0GED99ZRU1+iwMfzyDXNBuqNzQa5r5GSFg6bD8=",
+  "Hash": "9H28i6SwP5ksV+ULvWtfNMPdORNgEDQ7N+Qdqy2eN0w=",
   "Source": "Library",
   "BasePath": "_content/Library",
   "Mode": "Default",
@@ -7495,6 +7495,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "E:\\VisualGIT\\Library\\wwwroot\\previewBooks\\blueCover.jpg",
+      "SourceId": "Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VisualGIT\\Library\\wwwroot\\",
+      "BasePath": "_content/Library",
+      "RelativePath": "previewBooks/blueCover.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\previewBooks\\blueCover.jpg"
+    },
+    {
+      "Identity": "E:\\VisualGIT\\Library\\wwwroot\\previewBooks\\greenCover.jpg",
+      "SourceId": "Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VisualGIT\\Library\\wwwroot\\",
+      "BasePath": "_content/Library",
+      "RelativePath": "previewBooks/greenCover.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\previewBooks\\greenCover.jpg"
+    },
+    {
+      "Identity": "E:\\VisualGIT\\Library\\wwwroot\\previewBooks\\redCover.jpg",
+      "SourceId": "Library",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\VisualGIT\\Library\\wwwroot\\",
+      "BasePath": "_content/Library",
+      "RelativePath": "previewBooks/redCover.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\previewBooks\\redCover.jpg"
     }
   ]
 }

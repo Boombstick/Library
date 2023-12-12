@@ -11,7 +11,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <link href="html/saas/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <link href="/html/saas/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <link href="/html/saas/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="/html/saas/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
 
@@ -21,7 +21,6 @@
 <body>
     <div class="wrapper">
         <div class="leftside-menu" style="background: #000">
-
             <!-- LOGO -->
             <a href="/Home/index" class="logo text-center logo-light">
                 <span class="logo-lg">
@@ -75,52 +74,57 @@
                 <!-- Topbar Start -->
                 <div class="navbar-custom">
                     <ul class="list-unstyled topbar-menu float-end mb-0">
-                        <li class="dropdown notification-list">
-                            <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
-                               aria-expanded="false">
-                                <span class="account-user-avatar">
-                                    <img src="/images/Avatar.jpeg" alt="user-image" class="rounded-circle">
-                                </span>
-                                @if (User.Identity.IsAuthenticated)
-                                {
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="dropdown notification-list">
+                                <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" role="button" aria-haspopup="false"
+                                   aria-expanded="false">
+                                    <span class="account-user-avatar">
+                                        <img src="/images/Avatar.jpeg" alt="user-image" class="rounded-circle">
+                                    </span>
                                     <span>
                                         <span class="account-user-name">@User.Identity.Name</span>
-                                        <span class="account-position">Role Layout 85</span>
+                                        <span class="account-position">Role Layout 88</span>
                                     </span>
-                                }
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
-                                <!-- item-->
-                                <a asp-action="ShowReader" asp-controller="User" asp-route-userId="@userId" class="dropdown-item notify-item">
-                                    <i class="mdi mdi-account-circle me-1"></i>
-                                    <span>Профиль</span>
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
+                                    <!-- item-->
+                                    <a asp-action="ShowReader" asp-controller="User" asp-route-userId="@userId" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-account-circle me-1"></i>
+                                        <span>Профиль</span>
+                                    </a>
 
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="mdi mdi-account-edit me-1"></i>
-                                    <span>Settings</span>
-                                </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-account-edit me-1"></i>
+                                        <span>Settings</span>
+                                    </a>
 
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="mdi mdi-lifebuoy me-1"></i>
-                                    <span>Support</span>
-                                </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-lifebuoy me-1"></i>
+                                        <span>Support</span>
+                                    </a>
 
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="mdi mdi-lock-outline me-1"></i>
-                                    <span>Lock Screen</span>
-                                </a>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-lock-outline me-1"></i>
+                                        <span>Lock Screen</span>
+                                    </a>
 
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="mdi mdi-logout me-1"></i>
-                                    <span>Logout</span>
-                                </a>
-                            </div>
-                        </li>
+                                    <!-- item-->
+                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                        <i class="mdi mdi-logout me-1"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <a asp-controller="Account" asp-action="Register" class="text-muted ms-1">Зарегистрироваться</a>
+                            <a asp-controller="Account" asp-action="Login" class="text-muted ms-1">Войти</a>
+                        }
                     </ul>
                     <button class="button-menu-mobile open-left">
                         <i class="mdi mdi-menu"></i>

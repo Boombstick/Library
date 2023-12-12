@@ -61,7 +61,7 @@ namespace Library.Controllers
         }
         public IActionResult AddBookToReader()
         {
-            ViewBag.Readers = new SelectList(readers, "Id", "Name");
+            ViewBag.Readers = new SelectList(readers, "Id", "FullName");
             ViewBag.Books = new SelectList(books, "Id", "Name");
 
 

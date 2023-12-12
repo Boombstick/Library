@@ -1517,6 +1517,18 @@
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\previewBooks\\blueCover.jpg",
+      "PackagePath": "staticwebassets\\previewBooks\\blueCover.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\previewBooks\\greenCover.jpg",
+      "PackagePath": "staticwebassets\\previewBooks\\greenCover.jpg"
+    },
+    {
+      "Id": "E:\\VisualGIT\\Library\\wwwroot\\previewBooks\\redCover.jpg",
+      "PackagePath": "staticwebassets\\previewBooks\\redCover.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Library.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
