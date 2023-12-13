@@ -20,6 +20,7 @@ namespace Library.Models.Books
         public Reader Reader { get; set; }
 
         public bool IsPicked { get; set; } = false;
+        public string? CoverPath { get; set; } = null;
 
 
     }

@@ -1,0 +1,27 @@
+﻿@using Library.Models.Books
+@model Book
+<h2>Add new book</h2>
+
+<form method="post">
+    <label>Название книги</label>
+    <input type="text" name="name" /><br />
+
+    <label>Автор</label>
+    <input type="text" name="authorName"/><br />
+
+    <label>Дата публикации</label>
+    <input type="number" name="publication" /><br />
+
+    <label>Цвет обложки</label>
+    <select name="coverColor">
+        <option value="@CoverColor.Red">Красная</option>
+        <option value="@CoverColor.Blue">Синяя</option>
+        <option value="@CoverColor.Green">Зеленая</option>
+    </select>
+    <label>Стеллаж</label>
+    <select name="bookShelfId">
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+    </select><br>
+    <input type="submit" value="Add" />
+</form>

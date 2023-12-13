@@ -1,6 +1,8 @@
 ﻿@using System.Security.Claims;
 @{
     var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    var adminRole = User.IsInRole("Administrator");
+    var userRole = User.IsInRole("User");
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -40,32 +42,35 @@
                         <div class="collapse" id="sidebarBooks">
                             <ul class="side-nav-second-level">
                                 <li>
-                                    <a asp-controller="Home" asp-action="ShowAllBooks"><span style="color:white">Список всех книг</span></a>
+                                    <a asp-controller="Book" asp-action="ShowAllBooks"><span style="color:white">Список всех книг</span></a>
                                 </li>
                                 <li>
-                                    <a asp-controller="Home" asp-action="AddBook"><span style="color:white">Добавить новую книгу</span></a>
+                                    <a asp-controller="Book" asp-action="AddBook"><span style="color:white">Добавить новую книгу</span></a>
                                 </li>
                             </ul>
                         </div>
                     </li>
-                    <!-- Readers -->
-                    <li class="side-nav-item">
-                        <a data-bs-toggle="collapse" href="#sidebarReaders" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
-                            <i class="uil-home-alt"></i>
-                            <span style="color:white"> Читатели </span>
-                        </a>
-                        <div class="collapse" id="sidebarReaders">
-                            <ul class="side-nav-second-level">
-                                <li>
-                                    <a asp-controller="Reader" asp-action="Index"><span style="color:white">Показать читателей</span></a>
-                                </li>
-                                <li>
-                                    <a asp-controller="Reader" asp-action="AddBookToReader"><span style="color:white">Добавить книгу читателюу</span></a>
-                                </li>
+                    @if (adminRole)
+                    {
+                        <!-- Readers -->
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#sidebarReaders" aria-expanded="false" aria-controls="sidebarDashboards" class="side-nav-link">
+                                <i class="uil-home-alt"></i>
+                                <span style="color:white"> Читатели </span>
+                            </a>
+                            <div class="collapse" id="sidebarReaders">
+                                <ul class="side-nav-second-level">
+                                    <li>
+                                        <a asp-controller="Reader" asp-action="Index"><span style="color:white">Показать читателей</span></a>
+                                    </li>
+                                    <li>
+                                        <a asp-controller="Reader" asp-action="AddBookToReader"><span style="color:white">Добавить книгу читателюу</span></a>
+                                    </li>
 
-                            </ul>
-                        </div>
-                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>

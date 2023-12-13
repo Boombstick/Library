@@ -1,0 +1,8 @@
+﻿@model Book
+
+<ul>
+    <li>@Model.Name</li>
+    <li>@Model.Author?.Name</li>
+    <li>@Model.Publication</li>
+    <li><img src="@Model.CoverPath" height="110" /></li>
+</ul>

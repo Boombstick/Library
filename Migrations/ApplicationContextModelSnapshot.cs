@@ -120,6 +120,9 @@ namespace Library.Migrations
                     b.Property<int?>("BookShelfId")
                         .HasColumnType("int");
 
+                    b.Property<string>("CoverPath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsPicked")
                         .HasColumnType("bit");
 

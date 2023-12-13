@@ -12,6 +12,8 @@ namespace Library.Controllers
         private readonly UserManager<LibraryUser> _userManager;
         private readonly SignInManager<LibraryUser> _signInManager;
         private readonly ApplicationContext _db;
+        private const string _startPage = "StartPage";
+        private const string _homeController = "Home";
 
         public AccountController(SignInManager<LibraryUser> signInManager, UserManager<LibraryUser> userManager, ApplicationContext applicationContext)
         {
@@ -38,7 +40,7 @@ namespace Library.Controllers
                 user.Reader_Id = liss.Id+1;
                 await _db.SaveChangesAsync();
                 await _signInManager.SignInAsync(user, false);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction(_startPage, _homeController);
             }
             else
             {
@@ -74,7 +76,7 @@ namespace Library.Controllers
                         else
                         {
                             ViewBag.Id = user.Id;
-                            return RedirectToAction("Index", "Home");
+                            return RedirectToAction(_startPage, _homeController);
                         }
                     }
                     else
@@ -92,7 +94,7 @@ namespace Library.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction(_startPage, _homeController);
         }
 
 
