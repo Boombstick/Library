@@ -1,9 +1,9 @@
 ﻿@using System.Security.Claims;
-@{
-    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-    var adminRole = User.IsInRole("Administrator");
-    var userRole = User.IsInRole("User");
-}
+    @{
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var adminRole = User.IsInRole("Administrator");
+        var userRole = User.IsInRole("User");
+    }
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +94,7 @@
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
                                     <!-- item-->
-                                    <a asp-action="ShowReader" asp-controller="User" asp-route-userId="@userId" class="dropdown-item notify-item">
+                                    <a asp-action="ShowUser" asp-controller="User" asp-route-userId="@userId" class="dropdown-item notify-item">
                                         <i class="mdi mdi-account-circle me-1"></i>
                                         <span>Профиль</span>
                                     </a>

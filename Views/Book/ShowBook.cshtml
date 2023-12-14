@@ -1,8 +1,121 @@
 ﻿@model Book
 
-<ul>
-    <li>@Model.Name</li>
-    <li>@Model.Author?.Name</li>
-    <li>@Model.Publication</li>
-    <li><img src="@Model.CoverPath" height="110" /></li>
-</ul>
+<body class="loading">
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+
+        <div class="content">
+            <!-- Start Content-->
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title">Product Details</h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <!-- Product image -->
+                                        <a href="javascript: void(0);" class="text-center d-block mb-4">
+                                            <img src="@Model.CoverPath" class="img-fluid" style="max-width: 280px;" alt="Book-img" />
+                                        </a>
+                                        @* <div class="d-lg-flex d-none justify-content-center">
+                                        <a href="javascript: void(0);">
+                                        <img src="assets/images/products/product-1.jpg" class="img-fluid img-thumbnail p-2" style="max-width: 75px;" alt="Product-img" />
+                                        </a>
+                                        <a href="javascript: void(0);" class="ms-2">
+                                        <img src="assets/images/products/product-6.jpg" class="img-fluid img-thumbnail p-2" style="max-width: 75px;" alt="Product-img" />
+                                        </a>
+                                        <a href="javascript: void(0);" class="ms-2">
+                                        <img src="assets/images/products/product-3.jpg" class="img-fluid img-thumbnail p-2" style="max-width: 75px;" alt="Product-img" />
+                                        </a>
+                                        </div> *@
+                                    </div>
+                                    <!-- end col -->
+                                    <div class="col-lg-7">
+                                        <form class="ps-lg-4">
+                                            <!-- Product title -->
+                                            <h3 class="mt-0">@Model.Name <a href="javascript: void(0);" class="text-muted"></a> </h3>
+                                            <p class="mb-1">Автор - @Model.Author?.Name</p>
+
+                                            <!-- Product stock -->
+                                            <div class="mt-3">
+                                                @if (Model.IsPicked)
+                                                {
+                                                    <span class="badge bg-danger">На руках</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-success">В библиотеке</span>
+                                                }
+                                                <h4><span class="badge badge-success-lighten">Instock</span></h4>
+                                            </div>
+
+                                            <!-- Quantity -->
+                                            <div class="mt-4">
+                                                <h6 class="font-14">Quantity</h6>
+                                                <div class="d-flex">
+                                                    <input type="number" min="1" value="1" class="form-control" placeholder="Qty" style="width: 90px;">
+                                                    <button type="button" class="btn btn-danger ms-2"><i class="mdi mdi-cart me-1"></i> Add to cart</button>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product description -->
+                                            <div class="mt-4">
+                                                <h6 class="font-14">Description:</h6>
+                                                <p>Синопсис </p>
+                                            </div>
+
+                                            <!-- Product information -->
+                                            <div class="mt-4">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6 class="font-14">Дата публикации</h6>
+                                                        <p class="text-sm lh-150">@Model.Publication</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6 class="font-14">Количество страниц</h6>
+                                                        <p class="text-sm lh-150">1231231</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6 class="font-14">Человек прочитали</h6>
+                                                        <p class="text-sm lh-150">112</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div> <!-- end col -->
+                                </div> <!-- end row-->
+
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    </div> <!-- end col-->
+                </div>
+                <!-- end row-->
+
+            </div> <!-- container -->
+
+        </div> <!-- content -->
+
+    </div>
+    <!-- END wrapper -->
+    <!-- bundle -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
+</body>
