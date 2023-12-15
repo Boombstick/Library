@@ -8,8 +8,8 @@ namespace Library.Models.Books
         public int Publication { get; set; }
 
 
-        public int? BookShelfId { get; set; }
-        public Bookshelf BookShelf { get; set; }
+        public int? BookCaseId { get; set; }
+        public BookCase BookCase { get; set; }
 
 
         public int? AuthorId { get; set; }
@@ -18,6 +18,9 @@ namespace Library.Models.Books
 
         public int? ReaderId { get; set; }
         public Reader Reader { get; set; }
+
+        public int PageCount { get; set; }
+        public int NumberOfReading { get; set; } = 0;
 
         public bool IsPicked { get; set; } = false;
         public string? CoverPath { get; set; } = null;

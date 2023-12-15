@@ -117,7 +117,7 @@ namespace Library.Migrations
                     b.Property<int?>("AuthorId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("BookShelfId")
+                    b.Property<int?>("BookCaseId")
                         .HasColumnType("int");
 
                     b.Property<string>("CoverPath")
@@ -129,6 +129,12 @@ namespace Library.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("NumberOfReading")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PageCount")
+                        .HasColumnType("int");
+
                     b.Property<int>("Publication")
                         .HasColumnType("int");
 
@@ -139,14 +145,14 @@ namespace Library.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("BookShelfId");
+                    b.HasIndex("BookCaseId");
 
                     b.HasIndex("ReaderId");
 
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("Library.Models.Books.Bookshelf", b =>
+            modelBuilder.Entity("Library.Models.Books.BookCase", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -154,9 +160,42 @@ namespace Library.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("BookName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("BookShelfId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsEmpty")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("column")
+                        .HasColumnType("int");
+
+                    b.Property<int>("row")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("BookShelfId");
+
                     b.ToTable("Bookshelf");
+                });
+
+            modelBuilder.Entity("Library.Models.Books.BookShelf", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("OccupiedСells")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AllBookshelf");
                 });
 
             modelBuilder.Entity("Library.Models.Users.Reader", b =>
@@ -319,9 +358,9 @@ namespace Library.Migrations
                         .WithMany("Books")
                         .HasForeignKey("AuthorId");
 
-                    b.HasOne("Library.Models.Books.Bookshelf", "BookShelf")
+                    b.HasOne("Library.Models.Books.BookCase", "BookCase")
                         .WithMany()
-                        .HasForeignKey("BookShelfId");
+                        .HasForeignKey("BookCaseId");
 
                     b.HasOne("Library.Models.Users.Reader", "Reader")
                         .WithMany("Books")
@@ -329,9 +368,18 @@ namespace Library.Migrations
 
                     b.Navigation("Author");
 
-                    b.Navigation("BookShelf");
+                    b.Navigation("BookCase");
 
                     b.Navigation("Reader");
+                });
+
+            modelBuilder.Entity("Library.Models.Books.BookCase", b =>
+                {
+                    b.HasOne("Library.Models.Books.BookShelf", "BookShelf")
+                        .WithMany()
+                        .HasForeignKey("BookShelfId");
+
+                    b.Navigation("BookShelf");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

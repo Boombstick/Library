@@ -18,22 +18,45 @@ namespace Library.Controllers
         [HttpGet]
         public IActionResult AddBook() => View();
 
+        public BookCase GetNewBookCase(BookCase lastBookCase, int bookShelfId, string bookName)
+        {
+            IEnumerable<BookShelf> bookshelves = db.AllBookshelf.ToList();
+            var temp = bookshelves.FirstOrDefault(x => x.Id == bookShelfId);
+
+            int row = lastBookCase.row;
+            int column = lastBookCase.column+1;
+
+            if (column == 10)
+            {
+                row = lastBookCase.row + 1;
+                column = 1;
+            }
+            BookCase result = new BookCase { column = column, row = row, IsEmpty = false, BookShelf = temp, BookName = bookName };
+            if (temp.OccupiedСells > 50)
+            {
+                var newBookShelf = new BookShelf();
+                db.AllBookshelf.AddAsync(newBookShelf);
+                result.BookShelf = newBookShelf;
+            }
+            return result;
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddBook(Book book, string authorName, string bookShelfId, CoverColor coverColor)
         {
             int number = Convert.ToInt32(bookShelfId);
-            IEnumerable<Author> authors = db.Authors.ToList();
-            IEnumerable<Bookshelf> bookshelves = db.Bookshelf.ToList();
-            if (authors.Any(x => x.Name == authorName))
+            var lastBookCase = await db.Bookshelf.OrderByDescending(x => x.Id).FirstOrDefaultAsync();
+            BookCase bookCase = GetNewBookCase(lastBookCase, number, book.Name);
+            if (db.Authors.Any(x => x.Name == authorName))
             {
-                Book Book = new Book { Name = book.Name, Author = authors.FirstOrDefault(x=>x.Name==authorName), Publication = book.Publication, BookShelf = bookshelves.FirstOrDefault(x => x.Id == number), CoverPath = GetCoverColor(coverColor) };
+                Book Book = new Book { Name = book.Name, Author = db.Authors.FirstOrDefault(x => x.Name == authorName), Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };
                 db.Books.Add(Book);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            Author author = new Author { Name = authorName };
-            Book Book1 = new Book { Name = book.Name, Author = author, Publication = book.Publication, BookShelf = bookshelves.FirstOrDefault(x => x.Id == number), CoverPath = GetCoverColor(coverColor) };
-            db.Authors.Add(author);
+            Author newAuthor = new Author { Name = authorName };
+            Book Book1 = new Book { Name = book.Name, Author = newAuthor, Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };
+            db.Authors.Add(newAuthor);
             db.Books.Add(Book1);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -55,7 +78,7 @@ namespace Library.Controllers
             }
             if (bookShelfId != 0)
             {
-                books = books.Where(p => p.BookShelfId == bookShelfId);
+                books = books.Where(p => p.BookCase.BookShelfId == bookShelfId);
             }
 
             //Sort
@@ -77,10 +100,10 @@ namespace Library.Controllers
                     books = books.OrderByDescending(p => p.Author);
                     break;
                 case SortState.BookShelfAsc:
-                    books = books.OrderBy(p => p.BookShelf);
+                    books = books.OrderBy(p => p.BookCase.BookShelf);
                     break;
                 case SortState.BookShelfDesc:
-                    books = books.OrderByDescending(p => p.BookShelf);
+                    books = books.OrderByDescending(p => p.BookCase.BookShelf);
                     break;
                 default:
                     books = books.OrderBy(p => p.Name);

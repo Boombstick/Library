@@ -1,11 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Library.Models.Books
+﻿namespace Library.Models.Books
 {
-    public class Bookshelf
+    public class BookShelf
     {
         public int Id { get; set; }
-        [NotMapped]
-        public Book[,] Books { get; set; } = new Book[2, 5];
+        public int OccupiedСells { get; set; } = 0;
     }
 }
