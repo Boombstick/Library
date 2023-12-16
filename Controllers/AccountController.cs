@@ -11,15 +11,19 @@ namespace Library.Controllers
     {
         private readonly UserManager<LibraryUser> _userManager;
         private readonly SignInManager<LibraryUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly ApplicationContext _db;
         private const string _startPage = "StartPage";
         private const string _homeController = "Home";
 
-        public AccountController(SignInManager<LibraryUser> signInManager, UserManager<LibraryUser> userManager, ApplicationContext applicationContext)
+        private const string _userRole = "User";
+
+        public AccountController(SignInManager<LibraryUser> signInManager, UserManager<LibraryUser> userManager, ApplicationContext applicationContext, RoleManager<IdentityRole> roleManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _db = applicationContext;
+            _roleManager = roleManager;
         }
         [HttpGet]
         public IActionResult Register()
@@ -38,8 +42,9 @@ namespace Library.Controllers
                 _db.Readers.Add(reader);
                 var liss = await _db.Readers.OrderByDescending(x => x.Id).FirstOrDefaultAsync();
                 user.Reader_Id = liss.Id+1;
-                await _db.SaveChangesAsync();
+                await _userManager.AddToRoleAsync(user, _userRole);
                 await _signInManager.SignInAsync(user, false);
+                await _db.SaveChangesAsync();
                 return RedirectToAction(_startPage, _homeController);
             }
             else

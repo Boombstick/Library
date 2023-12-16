@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace Library.Controllers
 {
-    [Authorize(Roles="Administrator")]
+
     public class ReaderController : Controller
     {
         private readonly ApplicationContext db;
@@ -35,6 +35,7 @@ namespace Library.Controllers
             return View(list);
 
         }
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteReader(int? id)
         {
             if (id != null)
@@ -59,15 +60,15 @@ namespace Library.Controllers
 
             return RedirectToAction("Index");
         }
-        public IActionResult AddBookToReader()
+        public IActionResult AddBookToReaderByAdmin()
         {
+
             ViewBag.Readers = new SelectList(readers, "Id", "FullName");
             ViewBag.Books = new SelectList(books, "Id", "Name");
 
 
             return View();
         }
-        [HttpPost]
         public async Task<IActionResult> AddBookToReader(int readerId, int? bookId)
         {
             if (readerId != null && bookId != null)

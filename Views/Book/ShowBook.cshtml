@@ -1,4 +1,14 @@
-﻿@model Book
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity;
+
+
+@model Book
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    var adminRole = User.IsInRole("Administrator");
+    var userRole = User.IsInRole("User");
+    int readerId = int.Parse(@User.Claims.Where(x => x.Type == "readerId").Select(x => x.Value).FirstOrDefault());
+}
 
 <body class="loading">
     <!-- Begin page -->
@@ -66,13 +76,23 @@
                                             </div>
 
                                             <!-- Quantity -->
-                                            <div class="mt-4">
-                                                <h6 class="font-14">Quantity</h6>
-                                                <div class="d-flex">
-                                                    <input type="number" min="1" value="1" class="form-control" placeholder="Qty" style="width: 90px;">
-                                                    <button type="button" class="btn btn-danger ms-2"><i class="mdi mdi-cart me-1"></i> Add to cart</button>
+                                            @if (User.Identity.IsAuthenticated && userRole)
+                                            {
+
+                                                <div class="mt-4">
+                                                    <h6 class="font-14">Quantity</h6>
+                                                    <div class="d-flex">
+                                                        @if (Model.IsPicked)
+                                                        {
+                                                            <a class="btn btn-info" asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id"> Хочу почитать </a>
+                                                        }
+                                                        else
+                                                        {
+                                                            <a class="btn btn-danger ms-2" asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id" method="post">Взять</a>
+                                                        }
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            }
 
                                             <!-- Product description -->
                                             <div class="mt-4">
@@ -89,11 +109,11 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <h6 class="font-14">Количество страниц</h6>
-                                                        <p class="text-sm lh-150">1231231</p>
+                                                        <p class="text-sm lh-150">@Model.PageCount</p>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <h6 class="font-14">Человек прочитали</h6>
-                                                        <p class="text-sm lh-150">112</p>
+                                                        <p class="text-sm lh-150">@Model.NumberOfReading</p>
                                                     </div>
                                                 </div>
                                             </div>

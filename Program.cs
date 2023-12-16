@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Configuration;
 using Library.Models.Account;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Library.helper_classes;
 
 namespace Library
 {
@@ -25,6 +26,7 @@ namespace Library
             builder.Services.AddDefaultIdentity<LibraryUser>(/*options => options.SignIn.RequireConfirmedAccount = true*/)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationContext>();
+            builder.Services.AddScoped<IUserClaimsPrincipalFactory<LibraryUser>, AppClaimsPrincipalFactory>();
 
             builder.Services.AddControllersWithViews();
 

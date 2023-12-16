@@ -18,28 +18,6 @@ namespace Library.Controllers
         [HttpGet]
         public IActionResult AddBook() => View();
 
-        public BookCase GetNewBookCase(BookCase lastBookCase, int bookShelfId, string bookName)
-        {
-            IEnumerable<BookShelf> bookshelves = db.AllBookshelf.ToList();
-            var temp = bookshelves.FirstOrDefault(x => x.Id == bookShelfId);
-
-            int row = lastBookCase.row;
-            int column = lastBookCase.column+1;
-
-            if (column == 10)
-            {
-                row = lastBookCase.row + 1;
-                column = 1;
-            }
-            BookCase result = new BookCase { column = column, row = row, IsEmpty = false, BookShelf = temp, BookName = bookName };
-            if (temp.OccupiedСells > 50)
-            {
-                var newBookShelf = new BookShelf();
-                db.AllBookshelf.AddAsync(newBookShelf);
-                result.BookShelf = newBookShelf;
-            }
-            return result;
-        }
 
         [HttpPost]
         public async Task<IActionResult> AddBook(Book book, string authorName, string bookShelfId, CoverColor coverColor)
@@ -160,6 +138,28 @@ namespace Library.Controllers
         }
 
 
+        private BookCase GetNewBookCase(BookCase lastBookCase, int bookShelfId, string bookName)
+        {
+            IEnumerable<BookShelf> bookshelves = db.AllBookshelf.ToList();
+            var temp = bookshelves.FirstOrDefault(x => x.Id == bookShelfId);
+
+            int row = lastBookCase.row;
+            int column = lastBookCase.column+1;
+
+            if (column == 10)
+            {
+                row = lastBookCase.row + 1;
+                column = 1;
+            }
+            BookCase result = new BookCase { column = column, row = row, IsEmpty = false, BookShelf = temp, BookName = bookName };
+            if (temp.OccupiedСells > 50)
+            {
+                var newBookShelf = new BookShelf();
+                db.AllBookshelf.AddAsync(newBookShelf);
+                result.BookShelf = newBookShelf;
+            }
+            return result;
+        }
         private string GetCoverColor(CoverColor coverColor)
         {
             switch (coverColor)

@@ -208,8 +208,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFydFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/VisualGIT/Library/Views/Reader/AddBookToReader.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhZGVyXEFkZEJvb2tUb1JlYWRlci5jc2h0bWw=
+[E:/VisualGIT/Library/Views/Reader/AddBookToReaderByAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVhZGVyXEFkZEJvb2tUb1JlYWRlckJ5QWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/VisualGIT/Library/Views/Reader/Index.cshtml]
@@ -240,8 +240,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/VisualGIT/Library/Views/User/ShowUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaG93VXNlci5jc2h0bWw=
+[E:/VisualGIT/Library/Views/User/ShowReader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaG93UmVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/VisualGIT/Library/Views/_ViewImports.cshtml]
