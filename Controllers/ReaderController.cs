@@ -44,13 +44,6 @@ namespace Library.Controllers
                 if (reader != null)
                 {
                     reader.Books.Clear();
-                    //foreach (var item in db.Books)
-                    //{
-                    //    if (item.ReaderId == reader.Id)
-                    //    {
-                    //        item.ReaderId = null;
-                    //    }
-                    //}
                     db.Remove(reader);
                     await db.SaveChangesAsync();
                     return RedirectToAction("Index");
