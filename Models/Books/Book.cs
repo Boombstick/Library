@@ -1,4 +1,5 @@
-﻿using Library.Models.Users;
+﻿using Library.Models.Readers;
+
 namespace Library.Models.Books
 {
     public class Book
@@ -18,7 +19,6 @@ namespace Library.Models.Books
 
         public int? ReaderId { get; set; }
         public Reader Reader { get; set; }
-
         public int PageCount { get; set; }
         public int NumberOfReading { get; set; } = 0;
 

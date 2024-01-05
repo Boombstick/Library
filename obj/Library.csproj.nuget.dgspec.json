@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\VisualGIT\\Library\\Library.csproj": {}
+    "E:\\VisualGIT\\Library\\Library\\Library.csproj": {}
   },
   "projects": {
-    "E:\\VisualGIT\\Library\\Library.csproj": {
+    "E:\\VisualGIT\\Library\\Library\\Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\VisualGIT\\Library\\Library.csproj",
+        "projectUniqueName": "E:\\VisualGIT\\Library\\Library\\Library.csproj",
         "projectName": "Library",
-        "projectPath": "E:\\VisualGIT\\Library\\Library.csproj",
+        "projectPath": "E:\\VisualGIT\\Library\\Library\\Library.csproj",
         "packagesPath": "C:\\Users\\Boomb\\.nuget\\packages\\",
-        "outputPath": "E:\\VisualGIT\\Library\\obj\\",
+        "outputPath": "E:\\VisualGIT\\Library\\Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,6 +75,10 @@
             "Microsoft.Extensions.Identity.Core": {
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
             }
           },
           "imports": [

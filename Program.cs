@@ -10,6 +10,7 @@ using System.Configuration;
 using Library.Models.Account;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Library.helper_classes;
+using Library.Abstractions;
 
 namespace Library
 {
@@ -28,6 +29,8 @@ namespace Library
                 .AddEntityFrameworkStores<ApplicationContext>();
             builder.Services.AddScoped<IUserClaimsPrincipalFactory<LibraryUser>, AppClaimsPrincipalFactory>();
 
+            builder.Services.AddScoped(typeof(BookManager), typeof(BookManager));
+            builder.Services.AddScoped(typeof(ReaderManager), typeof(ReaderManager));
             builder.Services.AddControllersWithViews();
 
 

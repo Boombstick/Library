@@ -103,7 +103,7 @@ namespace Library.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors");
+                    b.ToTable("Authors", (string)null);
                 });
 
             modelBuilder.Entity("Library.Models.Books.Book", b =>
@@ -149,7 +149,7 @@ namespace Library.Migrations
 
                     b.HasIndex("ReaderId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("Library.Models.Books.BookCase", b =>
@@ -179,7 +179,7 @@ namespace Library.Migrations
 
                     b.HasIndex("BookShelfId");
 
-                    b.ToTable("Bookshelf");
+                    b.ToTable("Bookshelf", (string)null);
                 });
 
             modelBuilder.Entity("Library.Models.Books.BookShelf", b =>
@@ -195,7 +195,7 @@ namespace Library.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AllBookshelf");
+                    b.ToTable("AllBookshelf", (string)null);
                 });
 
             modelBuilder.Entity("Library.Models.Users.Reader", b =>
@@ -216,7 +216,7 @@ namespace Library.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Readers");
+                    b.ToTable("Readers", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
