@@ -1,5 +1,6 @@
 ﻿using Library.Models;
 using Library.Models.Books;
+using Library.Models.Readers;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
@@ -92,13 +93,25 @@ namespace Library.Abstractions
         }
         public async Task<Book> GetBookAsync(int id, bool includeAuthor = true)
         {
-            if (!includeAuthor)
+            if (includeAuthor)
             {
-                var book = await _context.Books.FirstOrDefaultAsync(x => x.Id.Equals(id));
-                return book;
+                
+                var bookWithAuthor = await _context.Books.Include(x => x.Author).FirstOrDefaultAsync(x => x.Id.Equals(id));
+                return bookWithAuthor;
             }
-            var bookWithAuthor = await _context.Books.Include(x => x.Author).FirstOrDefaultAsync(x => x.Id.Equals(id));
-            return bookWithAuthor;
+            var book = await _context.Books.FirstOrDefaultAsync(x => x.Id.Equals(id));
+            return book;
+
+        }
+        public async Task<Book> GetBookWithReaderAsync(int id, bool includeAuthor = true)
+        {
+            if (includeAuthor)
+            { 
+                var bookWithAuthor = await _context.Books.Include(x => x.Reader).Include(x => x.Author).FirstOrDefaultAsync(x => x.Id.Equals(id));
+                return bookWithAuthor;
+            }
+            var book = await _context.Books.Include(x => x.Reader).FirstOrDefaultAsync(x => x.Id.Equals(id));
+            return book;
 
         }
         public async Task AddBookAsync(Book book, string authorName, string bookShelfId, CoverColor coverColor)

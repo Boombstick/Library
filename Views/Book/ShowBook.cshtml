@@ -66,13 +66,13 @@
                                             <div class="mt-3">
                                                 @if (Model.IsPicked)
                                                 {
-                                                    <span class="badge bg-danger">На руках</span>
+                                                        <span class="badge bg-danger">На руках</span>
                                                 }
+                                                
                                                 else
                                                 {
                                                     <span class="badge bg-success">В библиотеке</span>
                                                 }
-                                                <h4><span class="badge badge-success-lighten">Instock</span></h4>
                                             </div>
 
                                             <!-- Quantity -->
@@ -82,13 +82,17 @@
                                                 <div class="mt-4">
                                                     <h6 class="font-14">Quantity</h6>
                                                     <div class="d-flex">
-                                                        @if (Model.IsPicked)
+                                                        @if (Model.IsPicked && Model.Reader.Id != readerId)
                                                         {
-                                                            <a class="btn btn-info" asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id"> Хочу почитать </a>
+                                                            <span class="btn btn-info" @* asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id" *@> Хочу почитать </span>
                                                         }
+                                                        else if (Model.Reader != null && Model.Reader.Id == readerId)
+                                                        {
+                                                            <a class="btn btn-danger ms-2" asp-controller="Reader" asp-action="AddBookToLibrary" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id">Вернуть</a>
+                                                        }    
                                                         else
                                                         {
-                                                            <a class="btn btn-danger ms-2" asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id" method="post">Взять</a>
+                                                            <a class="btn btn-success ms-2" asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id" method="post">Взять</a>
                                                         }
                                                     </div>
                                                 </div>
@@ -134,8 +138,8 @@
 
     </div>
     <!-- END wrapper -->
-    <!-- bundle -->
+@*     <!-- bundle -->
     <script src="assets/js/vendor.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/app.min.js"></script> *@
 
 </body>

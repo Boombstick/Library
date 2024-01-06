@@ -17,31 +17,39 @@ namespace Library.Controllers
     {
         private readonly ReaderManager _readerManager;
         private readonly BookManager _bookManager;
-        IEnumerable<Book> books = new List<Book>();
+        private readonly DataManager _dataManager;
 
-        public ReaderController(ReaderManager readerManager, BookManager bookManager)
+
+        public ReaderController(ReaderManager readerManager, BookManager bookManager, DataManager dataManager)
         {
             _readerManager = readerManager;
             _bookManager = bookManager;
+            _dataManager = dataManager;
         }
 
 
         public async Task<IActionResult> AddBookToReader(int readerId, int bookId)
         {
 
-            var reader = await _readerManager.GetReaderAsync(readerId, false);
-            var book = await _bookManager.GetBookAsync(bookId, false);
-            book.IsPicked = true;
-            reader.Books.Add(book);
-            await db.SaveChangesAsync();
+            var result = await _dataManager.BookToReaderAsync(readerId, bookId);
+            if (result ==null)
+            {
+                return Content("Error");
+            }
             return RedirectToAction("Index");
-            return Content("Error");
+
         }
+        public async Task<IActionResult> AddBookToLibrary(int readerId, int bookId)
+        {
 
+            var result = await _dataManager.BookToLibraryAsync(readerId, bookId);
+            if (result == null)
+            {
+                return Content("Error");
+            }
+            return RedirectToAction("Index");
 
-
-
-
+        }
 
         [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> AddBookToReaderByAdmin()
@@ -52,9 +60,10 @@ namespace Library.Controllers
             ViewBag.Books = new SelectList(books, "Id", "Name");
             return View();
         }
-        public IActionResult Index()
+
+        public async Task<IActionResult> Index()
         {
-            var ReaderList = _readerManager.GetAllReadersAsync();
+            var ReaderList = await _readerManager.GetAllReadersAsync();
             return View(ReaderList);
         }
         public async Task<IActionResult> DeleteReader(int id)

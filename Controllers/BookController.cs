@@ -37,7 +37,7 @@ namespace Library.Controllers
         }
         public async Task<IActionResult> ShowAllBooks(string name, int author = 0, int page = 1, SortState sortOrder = SortState.NameAsc, int bookShelfId = 0)
         {
-            var viewModel = await _bookManager.GetAllBooksAsync(name,author,page,sortOrder,bookShelfId);
+            var viewModel = await _bookManager.GetAllBooksAsync(name, author, page, sortOrder, bookShelfId);
 
             return View(viewModel);
         }
@@ -47,14 +47,21 @@ namespace Library.Controllers
 
             return RedirectToAction("ShowAllBooks");
         }
-        public async Task<IActionResult> ShowBook(int bookId)
+        public async Task<IActionResult> ShowBook(int bookId, bool includeReader = false)
         {
-            var book = await _bookManager.GetBookAsync(bookId);
-            if (book != null) return View(book);
-
+            if (includeReader)
+            {
+                var bookWithReader = await _bookManager.GetBookWithReaderAsync(bookId);
+                if (bookWithReader != null) return View(bookWithReader);
+            }
+            else
+            {
+                var book = await _bookManager.GetBookWithReaderAsync(bookId);
+                if (book != null) return View(book);
+            }
             return NotFound();
         }
 
-        
+
     }
 }
