@@ -60,7 +60,7 @@
                                         <form class="ps-lg-4">
                                             <!-- Product title -->
                                             <h3 class="mt-0">@Model.Name <a href="javascript: void(0);" class="text-muted"></a> </h3>
-                                            <p class="mb-1">Автор - @Model.Author?.Name</p>
+                                            <p class="mb-1">Автор - @Model.Author?.FullName</p>
 
                                             <!-- Product stock -->
                                             <div class="mt-3">
@@ -118,6 +118,10 @@
                                                     <div class="col-md-4">
                                                         <h6 class="font-14">Человек прочитали</h6>
                                                         <p class="text-sm lh-150">@Model.NumberOfReading</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6 class="font-14">Расположение</h6>
+                                                        <p class="text-sm lh-150">Cтелаж №@Model.BookCase.BookShelfId, @Model.BookCase.row полка, @Model.BookCase.column ячейка"</p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -3,6 +3,7 @@ using Library.Models;
 using Library.Models.Books;
 using Library.Models.Readers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Library.Controllers
@@ -10,10 +11,12 @@ namespace Library.Controllers
     public class BookController : Controller
     {
         private readonly BookManager _bookManager;
+        private readonly AuthorManager _authorManager;
 
-        public BookController(BookManager bookManager)
+        public BookController(BookManager bookManager, AuthorManager authorManager)
         {
             _bookManager = bookManager;
+            _authorManager = authorManager;
         }
         public IActionResult Index()
         {
@@ -22,11 +25,17 @@ namespace Library.Controllers
         }
 
         [HttpGet]
-        public IActionResult AddBook() => View();
+        public async Task<IActionResult> AddBook()
+
+        {   var authors = await _authorManager.GetAllAuthorsAsync(false);
+            ViewBag.Authors = new SelectList(authors, "Id", "FullName");
+            return View();
+        }
+
         [HttpPost]
-        public async Task<IActionResult> AddBook(Book book, string authorName, string bookShelfId, CoverColor coverColor)
+        public async Task<IActionResult> AddBook(Book book, string authorId, string bookShelfId, CoverColor coverColor)
         {
-            await _bookManager.AddBookAsync(book, authorName, bookShelfId, coverColor);
+            await _bookManager.AddBookAsync(book, int.Parse(authorId), bookShelfId, coverColor);
 
             //Author newAuthor = new Author { Name = authorName };
             //Book Book1 = new Book { Name = book.Name, Author = newAuthor, Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };

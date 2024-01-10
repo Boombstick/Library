@@ -5,34 +5,6 @@
       "PackagePath": "staticwebassets\\Library.bundle.scp.css"
     },
     {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark-rtl.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-dark.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-dark.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-rtl.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-rtl.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative-rtl.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative-rtl.min.css.map"
-    },
-    {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-creative.css",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative.css"
     },
@@ -45,54 +17,6 @@
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-creative.min.css.map"
     },
     {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark-rtl.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark-rtl.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark-rtl.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark-rtl.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-dark.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-dark.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark-rtl.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-dark.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-dark.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-rtl.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-rtl.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern-rtl.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern-rtl.min.css.map"
-    },
-    {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern.css",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern.css"
     },
@@ -103,14 +27,6 @@
     {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-modern.min.css.map",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-modern.min.css.map"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-rtl.min.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-rtl.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app-rtl.min.css.map",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\app-rtl.min.css.map"
     },
     {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\app.css",
@@ -145,10 +61,6 @@
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\icons.min.css.map"
     },
     {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\32px.png",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\32px.png"
-    },
-    {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\britecharts.min.css",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\britecharts.min.css"
     },
@@ -169,10 +81,6 @@
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\fixedHeader.bootstrap5.css"
     },
     {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\frappe-gantt.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\frappe-gantt.css"
-    },
-    {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\fullcalendar.min.css",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\fullcalendar.min.css"
     },
@@ -185,18 +93,6 @@
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\jstree.min.css"
     },
     {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\quill.bubble.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\quill.bubble.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\quill.core.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\quill.core.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\quill.snow.css",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\quill.snow.css"
-    },
-    {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\responsive.bootstrap5.css",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\responsive.bootstrap5.css"
     },
@@ -207,14 +103,6 @@
     {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\simplemde.min.css",
       "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\simplemde.min.css"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\css\\vendor\\throbber.gif",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\css\\vendor\\throbber.gif"
-    },
-    {
-      "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\data\\vendor\\ajax_demo_children.json",
-      "PackagePath": "staticwebassets\\html\\saas\\assets\\data\\vendor\\ajax_demo_children.json"
     },
     {
       "Id": "E:\\VisualGIT\\Library\\Library\\wwwroot\\html\\saas\\assets\\fonts\\Nunito-Bold.eot",

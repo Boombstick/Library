@@ -1,6 +1,7 @@
 ﻿using Library.Models.Account;
 using Library.Models.Books;
 using Library.Models.Readers;
+using Library.Models.Authors;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

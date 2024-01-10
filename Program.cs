@@ -32,6 +32,7 @@ namespace Library
             builder.Services.AddScoped(typeof(BookManager), typeof(BookManager));
             builder.Services.AddScoped(typeof(ReaderManager), typeof(ReaderManager));
             builder.Services.AddScoped(typeof(DataManager), typeof(DataManager));
+            builder.Services.AddScoped(typeof(AuthorManager), typeof(AuthorManager));
             builder.Services.AddControllersWithViews();
 
 

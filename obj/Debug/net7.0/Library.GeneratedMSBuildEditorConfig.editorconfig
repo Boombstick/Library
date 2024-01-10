@@ -180,8 +180,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/VisualGIT/Library/Library/Views/Book/AddAuthor.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xBZGRBdXRob3IuY3NodG1s
+[E:/VisualGIT/Library/Library/Views/Author/AddNewAuthor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yXEFkZE5ld0F1dGhvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/VisualGIT/Library/Library/Views/Book/AddBook.cshtml]

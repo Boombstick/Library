@@ -90,7 +90,7 @@ namespace Library.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
-            modelBuilder.Entity("Library.Models.Books.Author", b =>
+            modelBuilder.Entity("Library.Models.Authors.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -98,12 +98,20 @@ namespace Library.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pseudonym")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Authors", (string)null);
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("Library.Models.Books.Book", b =>
@@ -149,7 +157,7 @@ namespace Library.Migrations
 
                     b.HasIndex("ReaderId");
 
-                    b.ToTable("Books", (string)null);
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("Library.Models.Books.BookCase", b =>
@@ -179,7 +187,7 @@ namespace Library.Migrations
 
                     b.HasIndex("BookShelfId");
 
-                    b.ToTable("Bookshelf", (string)null);
+                    b.ToTable("Bookshelf");
                 });
 
             modelBuilder.Entity("Library.Models.Books.BookShelf", b =>
@@ -195,10 +203,10 @@ namespace Library.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AllBookshelf", (string)null);
+                    b.ToTable("AllBookshelf");
                 });
 
-            modelBuilder.Entity("Library.Models.Users.Reader", b =>
+            modelBuilder.Entity("Library.Models.Readers.Reader", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -216,7 +224,7 @@ namespace Library.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Readers", (string)null);
+                    b.ToTable("Readers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -354,7 +362,7 @@ namespace Library.Migrations
 
             modelBuilder.Entity("Library.Models.Books.Book", b =>
                 {
-                    b.HasOne("Library.Models.Books.Author", "Author")
+                    b.HasOne("Library.Models.Authors.Author", "Author")
                         .WithMany("Books")
                         .HasForeignKey("AuthorId");
 
@@ -362,7 +370,7 @@ namespace Library.Migrations
                         .WithMany()
                         .HasForeignKey("BookCaseId");
 
-                    b.HasOne("Library.Models.Users.Reader", "Reader")
+                    b.HasOne("Library.Models.Readers.Reader", "Reader")
                         .WithMany("Books")
                         .HasForeignKey("ReaderId");
 
@@ -433,12 +441,12 @@ namespace Library.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Library.Models.Books.Author", b =>
+            modelBuilder.Entity("Library.Models.Authors.Author", b =>
                 {
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("Library.Models.Users.Reader", b =>
+            modelBuilder.Entity("Library.Models.Readers.Reader", b =>
                 {
                     b.Navigation("Books");
                 });

@@ -97,7 +97,7 @@
                                                                 <a asp-action="ShowBook" asp-controller="Book" asp-route-bookid="@book.Id" asp-route-includeReader="true" class="text-body">@book.Name</a>
                                                             </p>
                                                         </td>
-                                                        <td>@book.Author?.Name</td>
+                                                        <td>@book.Author?.FullName</td>
                                                         <td>@book.Publication</td>
                                                         <td>
                                                             @if (book.IsPicked)

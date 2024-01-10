@@ -7,7 +7,8 @@
     <input type="text" name="name" /><br />
 
     <label>Автор</label>
-    <input type="text" name="authorName"/><br />
+    @Html.DropDownList("authorId",ViewBag.Authors as SelectList)
+    <a asp-controller="Author" asp-action="AddNewAuthor">Добавить нового автора</a><br />
 
     <label>Дата публикации</label>
     <input type="number" name="publication" /><br />

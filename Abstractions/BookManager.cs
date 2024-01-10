@@ -1,5 +1,6 @@
 ﻿using Library.Models;
 using Library.Models.Books;
+using Library.Models.Authors;
 using Library.Models.Readers;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -96,7 +97,7 @@ namespace Library.Abstractions
             if (includeAuthor)
             {
                 
-                var bookWithAuthor = await _context.Books.Include(x => x.Author).FirstOrDefaultAsync(x => x.Id.Equals(id));
+                var bookWithAuthor = await _context.Books.Include(x => x.Author).Include(x => x.BookCase).FirstOrDefaultAsync(x => x.Id.Equals(id));
                 return bookWithAuthor;
             }
             var book = await _context.Books.FirstOrDefaultAsync(x => x.Id.Equals(id));
@@ -107,19 +108,19 @@ namespace Library.Abstractions
         {
             if (includeAuthor)
             { 
-                var bookWithAuthor = await _context.Books.Include(x => x.Reader).Include(x => x.Author).FirstOrDefaultAsync(x => x.Id.Equals(id));
+                var bookWithAuthor = await _context.Books.Include(x => x.Reader).Include(x => x.Author).Include(x => x.BookCase).FirstOrDefaultAsync(x => x.Id.Equals(id));
                 return bookWithAuthor;
             }
             var book = await _context.Books.Include(x => x.Reader).FirstOrDefaultAsync(x => x.Id.Equals(id));
             return book;
 
         }
-        public async Task AddBookAsync(Book book, string authorName, string bookShelfId, CoverColor coverColor)
+        public async Task AddBookAsync(Book book, int authorId, string bookShelfId, CoverColor coverColor)
         {
             int number = Convert.ToInt32(bookShelfId);
             var lastBookCase = await _context.Bookshelf.OrderByDescending(x => x.Id).FirstOrDefaultAsync();
             BookCase bookCase = GetNewBookCase(lastBookCase, number, book.Name);
-            Book Book = new Book { Name = book.Name, Author = _context.Authors.FirstOrDefault(x => x.Name == authorName), Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };
+            Book Book = new Book { Name = book.Name, Author = _context.Authors.FirstOrDefault(x => x.Id.Equals(authorId)), Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };
 
 
             //Вынести в отдельный Сервис
