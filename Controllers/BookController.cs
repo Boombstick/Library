@@ -33,16 +33,16 @@ namespace Library.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBook(Book book, string authorId, string bookShelfId, CoverColor coverColor)
+        public async Task<IActionResult> AddBook(Book book, string authorId, string bookShelfId, CoverColor coverColor,int numberOfPages=0)
         {
-            await _bookManager.AddBookAsync(book, int.Parse(authorId), bookShelfId, coverColor);
+            await _bookManager.AddBookAsync(book, int.Parse(authorId), bookShelfId, coverColor, numberOfPages);
 
             //Author newAuthor = new Author { Name = authorName };
             //Book Book1 = new Book { Name = book.Name, Author = newAuthor, Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };
             //db.Authors.Add(newAuthor);
             //db.Books.Add(Book1);
 
-            return RedirectToAction("Index");
+            return RedirectToAction("ShowAllBooks");
         }
         public async Task<IActionResult> ShowAllBooks(string name, int author = 0, int page = 1, SortState sortOrder = SortState.NameAsc, int bookShelfId = 0)
         {

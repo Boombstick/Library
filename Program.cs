@@ -1,14 +1,7 @@
 using Library.Models;
-using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using Microsoft.AspNetCore.Identity;
-using System.Configuration;
 using Library.Models.Account;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Library.helper_classes;
 using Library.Abstractions;
 
@@ -33,7 +26,13 @@ namespace Library
             builder.Services.AddScoped(typeof(ReaderManager), typeof(ReaderManager));
             builder.Services.AddScoped(typeof(DataManager), typeof(DataManager));
             builder.Services.AddScoped(typeof(AuthorManager), typeof(AuthorManager));
-            builder.Services.AddControllersWithViews();
+
+            builder.Services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "localhost";
+                options.InstanceName = "local";
+            });
+            builder.Services.AddControllersWithViews().AddNewtonsoftJson();
 
 
             builder.Services.ConfigureApplicationCookie(options => {

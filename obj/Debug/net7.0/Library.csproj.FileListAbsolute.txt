@@ -240,3 +240,13 @@ E:\VisualGIT\Library\Library\obj\Debug\net7.0\refint\Library.dll
 E:\VisualGIT\Library\Library\obj\Debug\net7.0\Library.pdb
 E:\VisualGIT\Library\Library\obj\Debug\net7.0\Library.genruntimeconfig.cache
 E:\VisualGIT\Library\Library\obj\Debug\net7.0\ref\Library.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\StackExchange.Redis.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\System.Diagnostics.PerformanceCounter.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\VisualGIT\Library\Library\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

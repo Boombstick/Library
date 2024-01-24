@@ -7,7 +7,13 @@
     var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
     var adminRole = User.IsInRole("Administrator");
     var userRole = User.IsInRole("User");
-    int readerId = int.Parse(@User.Claims.Where(x => x.Type == "readerId").Select(x => x.Value).FirstOrDefault());
+    int readerId = 0;
+    if (userId != null)
+    {
+
+        readerId = int.Parse(@User.Claims.Where(x => x?.Type == "readerId").Select(x => x?.Value).FirstOrDefault());
+    }
+
 }
 
 <body class="loading">
@@ -66,9 +72,9 @@
                                             <div class="mt-3">
                                                 @if (Model.IsPicked)
                                                 {
-                                                        <span class="badge bg-danger">На руках</span>
+                                                    <span class="badge bg-danger">На руках</span>
                                                 }
-                                                
+
                                                 else
                                                 {
                                                     <span class="badge bg-success">В библиотеке</span>
@@ -89,7 +95,7 @@
                                                         else if (Model.Reader != null && Model.Reader.Id == readerId)
                                                         {
                                                             <a class="btn btn-danger ms-2" asp-controller="Reader" asp-action="AddBookToLibrary" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id">Вернуть</a>
-                                                        }    
+                                                        }
                                                         else
                                                         {
                                                             <a class="btn btn-success ms-2" asp-controller="Reader" asp-action="AddBookToReader" asp-route-readerId="@readerId" asp-route-bookId="@Model.Id" method="post">Взять</a>
@@ -142,7 +148,7 @@
 
     </div>
     <!-- END wrapper -->
-@*     <!-- bundle -->
+    @*     <!-- bundle -->
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/app.min.js"></script> *@
 

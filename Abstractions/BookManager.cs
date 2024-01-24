@@ -1,19 +1,27 @@
 ﻿using Library.Models;
 using Library.Models.Books;
-using Library.Models.Authors;
-using Library.Models.Readers;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Library.Abstractions
 {
     public class BookManager
     {
+        private class blabla
+        {
+            public List<Book> Books { get; set; }
+        }
+
+        private const string _allBooksCache = "books";
         private readonly ApplicationContext _context;
-        public BookManager(ApplicationContext context)
+        private readonly IDistributedCache _cache;
+        public BookManager(ApplicationContext context, IDistributedCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public async Task<IEnumerable<Book>> GetListOfBooksAsync()
@@ -23,54 +31,77 @@ namespace Library.Abstractions
         public async Task<IndexViewModel> GetAllBooksAsync(string name, int author = 0, int page = 1, SortState sortOrder = SortState.NameAsc, int bookShelfId = 0)
         {
             int pageSize = 5;
+            //List<Book> books = await _context.Books.Include(x => x.Author).ToListAsync();
+
+            List<Book> books = null;
+
+            var cacheString = await _cache.GetStringAsync(_allBooksCache);
+            if (cacheString != null) books = JsonConvert.DeserializeObject<List<Book>>(cacheString);
+
+            if (books == null)
+            {
+                books = await _context.Books.Include(x => x.Author).ToListAsync();
+                if (books != null)
+                {
+                    var options = new JsonSerializerOptions
+                    {
+                        ReferenceHandler = ReferenceHandler.Preserve
+                    };
+                    cacheString = System.Text.Json.JsonSerializer.Serialize(books, options);
+                    await _cache.SetStringAsync(_allBooksCache, cacheString, new DistributedCacheEntryOptions
+                    {
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(2)
+                    });
+                }
+            }
 
             //Filter
-            IQueryable<Book> books = _context.Books.Include(x => x.Author);
             if (author != 0)
             {
-                books = books.Where(p => p.AuthorId == author);
+                books = books.Where(p => p.AuthorId == author).ToList();
             }
             if (!string.IsNullOrEmpty(name))
             {
-                books = books.Where(p => p.Name!.Contains(name));
+                books = books.Where(p => p.Name!.Contains(name)).ToList();
             }
             if (bookShelfId != 0)
             {
-                books = books.Where(p => p.BookCase.BookShelfId == bookShelfId);
+                books = books.Where(p => p.BookCase.BookShelfId == bookShelfId).ToList();
             }
 
             //Sort
             switch (sortOrder)
             {
                 case SortState.NameDesc:
-                    books = books.OrderByDescending(p => p.Name);
+                    books = books.OrderByDescending(p => p.Name).ToList();
                     break;
                 case SortState.PublicatinAsc:
-                    books = books.OrderBy(p => p.Publication);
+                    books.OrderBy(p => p.Publication);
                     break;
                 case SortState.PublicatinDesc:
-                    books = books.OrderByDescending(p => p.Publication);
+                    books = books.OrderByDescending(p => p.Publication).ToList();
                     break;
                 case SortState.AuthorAsc:
-                    books = books.OrderBy(p => p.Author);
+                    books = books.OrderBy(p => p.Author).ToList();
                     break;
                 case SortState.AuthorDesc:
-                    books = books.OrderByDescending(p => p.Author);
+                    books = books.OrderByDescending(p => p.Author).ToList();
                     break;
                 case SortState.BookShelfAsc:
-                    books = books.OrderBy(p => p.BookCase.BookShelf);
+                    books = books.OrderBy(p => p.BookCase.BookShelf).ToList();
                     break;
                 case SortState.BookShelfDesc:
-                    books = books.OrderByDescending(p => p.BookCase.BookShelf);
+                    books = books.OrderByDescending(p => p.BookCase.BookShelf).ToList();
                     break;
                 default:
-                    books = books.OrderBy(p => p.Name);
+                    books = books.OrderBy(p => p.Name).ToList();
                     break;
             }
 
             //Paging
-            var count = await books.CountAsync();
-            var items = await books.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
+            var count = books.Count();
+            var items = books.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
 
             //ViewModel
 
@@ -96,7 +127,6 @@ namespace Library.Abstractions
         {
             if (includeAuthor)
             {
-                
                 var bookWithAuthor = await _context.Books.Include(x => x.Author).Include(x => x.BookCase).FirstOrDefaultAsync(x => x.Id.Equals(id));
                 return bookWithAuthor;
             }
@@ -107,7 +137,7 @@ namespace Library.Abstractions
         public async Task<Book> GetBookWithReaderAsync(int id, bool includeAuthor = true)
         {
             if (includeAuthor)
-            { 
+            {
                 var bookWithAuthor = await _context.Books.Include(x => x.Reader).Include(x => x.Author).Include(x => x.BookCase).FirstOrDefaultAsync(x => x.Id.Equals(id));
                 return bookWithAuthor;
             }
@@ -115,15 +145,20 @@ namespace Library.Abstractions
             return book;
 
         }
-        public async Task AddBookAsync(Book book, int authorId, string bookShelfId, CoverColor coverColor)
+        public async Task AddBookAsync(Book book, int authorId, string bookShelfId, CoverColor coverColor, int numberOfPages)
         {
             int number = Convert.ToInt32(bookShelfId);
             var lastBookCase = await _context.Bookshelf.OrderByDescending(x => x.Id).FirstOrDefaultAsync();
             BookCase bookCase = GetNewBookCase(lastBookCase, number, book.Name);
-            Book Book = new Book { Name = book.Name, Author = _context.Authors.FirstOrDefault(x => x.Id.Equals(authorId)), Publication = book.Publication, BookCase = bookCase, CoverPath = GetCoverColor(coverColor) };
-
-
-            //Вынести в отдельный Сервис
+            Book Book = new Book
+            {
+                Name = book.Name,
+                Author = _context.Authors.FirstOrDefault(x => x.Id.Equals(authorId)),
+                Publication = book.Publication,
+                BookCase = bookCase,
+                CoverPath = GetCoverColor(coverColor),
+                PageCount = numberOfPages
+            };
             _context.Books.Add(Book);
             await _context.SaveChangesAsync();
         }

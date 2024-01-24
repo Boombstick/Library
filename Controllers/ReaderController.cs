@@ -55,9 +55,10 @@ namespace Library.Controllers
         public async Task<IActionResult> AddBookToReaderByAdmin()
         {
             var readers = await _readerManager.GetAllReadersAsync(false);
-            var books = await _bookManager.GetListOfBooksAsync();
+            var allBooks = await _bookManager.GetListOfBooksAsync();
+            var freeBooks = allBooks.Where(x => !x.IsPicked).ToList();
             ViewBag.Readers = new SelectList(readers, "Id", "FullName");
-            ViewBag.Books = new SelectList(books, "Id", "Name");
+            ViewBag.Books = new SelectList(freeBooks, "Id", "Name");
             return View();
         }
 

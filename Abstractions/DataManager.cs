@@ -20,10 +20,8 @@ namespace Library.Abstractions
 
             var reader = await _readerManager.GetReaderAsync(readerId, false);
             var book = await _bookManager.GetBookAsync(bookId, false);
-            if (reader == null && book == null)
-            {
-                return null;
-            }
+            if (reader == null && book == null) return null;
+
             book.IsPicked = true;
             reader.Books.Add(book);
             await _context.SaveChangesAsync();
@@ -38,6 +36,7 @@ namespace Library.Abstractions
                 return null;
             }
             book.IsPicked = false;
+            book.NumberOfReading++;
             reader.Books.Remove(book);
             await _context.SaveChangesAsync();
             return reader;
